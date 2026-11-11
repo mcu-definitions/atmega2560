@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['x_0',['X',['../namespaceatmega2560_1_1cpu.html#a682bc8ad2aefda1af65c46b8b18acecba02129bb861061d1a052c592e2dc6b383',1,'atmega2560::cpu']]],
+  ['x_5fhigh_5fregister_1',['x_high_register',['../namespaceatmega2560_1_1cpu.html#ac837d5ed19ee37e6bcdf8c9e86ab6aa3a489bb78893ff124bfe688ea8ee21b57c',1,'atmega2560::cpu']]],
+  ['x_5flow_5fregister_2',['x_low_register',['../namespaceatmega2560_1_1cpu.html#ac837d5ed19ee37e6bcdf8c9e86ab6aa3a9eeb732fb14f56470ef0c5b14f202ba5',1,'atmega2560::cpu']]],
+  ['xck0_3',['XCK0',['../namespaceatmega2560_1_1pin.html#a85b63a705c7806f45085fc5d2d653d2ca0e34aa3553bd68fcbc61d3b8ede8a1b2',1,'atmega2560::pin']]],
+  ['xck1_4',['XCK1',['../namespaceatmega2560_1_1pin.html#a85b63a705c7806f45085fc5d2d653d2ca29e86ca88674728ff645f147161ecba6',1,'atmega2560::pin']]],
+  ['xck2_5',['XCK2',['../namespaceatmega2560_1_1pin.html#a85b63a705c7806f45085fc5d2d653d2cafc5035c8823248129f7fa1e07bc97041',1,'atmega2560::pin']]],
+  ['xck3_6',['XCK3',['../namespaceatmega2560_1_1pin.html#a85b63a705c7806f45085fc5d2d653d2cab4d687934a6c4cc01d325193a30b686a',1,'atmega2560::pin']]],
+  ['xck_5fpin_5fvalue_7',['xck_pin_value',['../namespaceatmega2560_1_1usart_1_1usart0.html#ab91960252fe99d2d943c55715f3ec00aa78dd4850477a6a1cafecdf30663a1c75',1,'atmega2560::usart::usart0::xck_pin_value'],['../namespaceatmega2560_1_1usart_1_1usart1.html#ac14a3c2a3955074464466cb341cf8d1ca143d6aa57a2a9642b614cff5a20a6143',1,'atmega2560::usart::usart1::xck_pin_value'],['../namespaceatmega2560_1_1usart_1_1usart2.html#a68da93aaf1535ccaf76121c479dcf79ea050a1b92a2203b37cdc9e585845d51a2',1,'atmega2560::usart::usart2::xck_pin_value'],['../namespaceatmega2560_1_1usart_1_1usart3.html#a2fead76650cf06902599fb59a5c98757a9da817873abe27a39c867bd538ba9e4d',1,'atmega2560::usart::usart3::xck_pin_value']]],
+  ['xmbk_8',['xmbk',['../namespaceatmega2560_1_1register__bits_1_1xmcrb.html#a1fc3970c086922584d4e5006d03f45efa59bc265ec03c6e49b32ed003388550a0',1,'atmega2560::register_bits::xmcrb']]],
+  ['xmcra_9',['XMCRA',['../namespaceatmega2560_1_1register__map.html#a32e5cfee1968c9afa5b56d2819deb023a3e624c6b9fef22b018e8911b6ee39d4b',1,'atmega2560::register_map']]],
+  ['xmcrb_10',['XMCRB',['../namespaceatmega2560_1_1register__map.html#a32e5cfee1968c9afa5b56d2819deb023a8fa8f3f61b6b7e9f1c3b311c0da4b095',1,'atmega2560::register_map']]],
+  ['xmem_20h_11',['XMEM.h',['../md_docs_2modules_2xmem.html',1,'']]],
+  ['xmem_2eh_12',['XMEM.h',['../_x_m_e_m_8h.html',1,'']]],
+  ['xmem_2emd_13',['xmem.md',['../xmem_8md.html',1,'']]],
+  ['xmm0_14',['xmm0',['../namespaceatmega2560_1_1register__bits_1_1xmcrb.html#a1fc3970c086922584d4e5006d03f45efa1920a6ccac21384809816bcc5e225626',1,'atmega2560::register_bits::xmcrb']]],
+  ['xmm1_15',['xmm1',['../namespaceatmega2560_1_1register__bits_1_1xmcrb.html#a1fc3970c086922584d4e5006d03f45efa39670bd84b311538d9641f8dfc33a971',1,'atmega2560::register_bits::xmcrb']]],
+  ['xmm2_16',['xmm2',['../namespaceatmega2560_1_1register__bits_1_1xmcrb.html#a1fc3970c086922584d4e5006d03f45efa54d214dfe70e14df4e3285f6841dfd80',1,'atmega2560::register_bits::xmcrb']]],
+  ['xtal1_17',['XTAL1',['../namespaceatmega2560_1_1package_1_1tqfp100.html#a4b2c9b2117a1fccfd7ffc4ce56b45d2daddfa24919088569936f689151cf4a2e8',1,'atmega2560::package::tqfp100::XTAL1'],['../namespaceatmega2560_1_1package_1_1cbga100.html#a33678796be2adb98d16b1df100a9b8dca9a874dc28a27b4df7113365ef5a38b4f',1,'atmega2560::package::cbga100::XTAL1']]],
+  ['xtal2_18',['XTAL2',['../namespaceatmega2560_1_1package_1_1tqfp100.html#a4b2c9b2117a1fccfd7ffc4ce56b45d2da8f5ae14b0fcf1082c8cc6debf589bb77',1,'atmega2560::package::tqfp100::XTAL2'],['../namespaceatmega2560_1_1package_1_1cbga100.html#a33678796be2adb98d16b1df100a9b8dca7a5631fc2ce604b083daca1f013cc610',1,'atmega2560::package::cbga100::XTAL2']]]
+];
