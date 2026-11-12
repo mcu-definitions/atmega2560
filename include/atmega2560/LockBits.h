@@ -3,8 +3,8 @@
  * @brief Memory protection and bootloader lock bit positions.
  */
 
-#ifndef ATMEGA2560_DEFINITIONS_LOCKBITS_H
-#define ATMEGA2560_DEFINITIONS_LOCKBITS_H
+#ifndef ATMEGA2560_DEFINITIONS_LOCK_BITS_H
+#define ATMEGA2560_DEFINITIONS_LOCK_BITS_H
 
 #include <stdint.h>
 #include "Config.h"

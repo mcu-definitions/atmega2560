@@ -13,7 +13,7 @@
 /** @brief ATmega2560 hardware definitions. */
 namespace atmega2560
 {
-    /** @brief Pwm definitions. */
+    /** @brief PWM definitions. */
     namespace pwm
     {
         /** @brief 16 hardware compare outputs. */
@@ -36,6 +36,14 @@ namespace atmega2560
             OC5B = 14, ///< Timer5 compare B.
             OC5C = 15, ///< Timer5 compare C.
         };
+        /** @brief PWM operating modes. */
+        enum class Mode : uint8_t
+        {
+            Fast = 0,
+            PhaseCorrect = Fast + 1,
+            PhaseAndFrequencyCorrect = PhaseCorrect + 1,
+        };
+
         /** @brief Physical GPIO mapping for compare outputs. */
         enum class OutputPin : uint8_t
         {

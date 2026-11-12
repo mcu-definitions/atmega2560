@@ -112,49 +112,92 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2names
   <div class="headertitle"><div class="title">Namespaces </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md74"></a></p>
-<p>The root is <span class="tt"><a class="el" href="namespaceatmega2560.html" title="ATmega2560 hardware definitions.">atmega2560</a></span>. Consuming code should alias <span class="tt">namespace mcu = <a class="el" href="namespaceatmega2560.html" title="ATmega2560 hardware definitions.">atmega2560</a>;</span>.</p>
-<ul>
-<li><span class="tt">mcu::device</span> — Device identity and peripheral counts.</li>
-<li><span class="tt">mcu::architecture</span> — AVR CPU architecture.</li>
-<li><span class="tt">mcu::cpu</span> — Core register and status flags.</li>
-<li><span class="tt">mcu::memory</span> — Flash, EEPROM, SRAM, and external-memory geometry.</li>
-<li><span class="tt">mcu::eeprom</span> — EEPROM organization and endurance.</li>
-<li><span class="tt">mcu::register_bits</span> — Register bit positions and field masks.</li>
-<li><span class="tt">mcu::package</span> — Supported package types and selected package.</li>
-<li><span class="tt">mcu::package</span> — Physical terminal and ball mappings for 100-terminal packages.</li>
-<li><span class="tt">mcu::pin</span> — Logical GPIO pin and port identifiers.</li>
-<li><span class="tt">mcu::pin</span> — Pin capabilities and alternate function identifiers.</li>
-<li><span class="tt">mcu::gpio</span> — GPIO port widths, masks and pull-ups.</li>
-<li><span class="tt">mcu::clock</span> — Clock sources, oscillator and CPU prescaler.</li>
-<li><span class="tt">mcu::timer</span> — Timer/counter architecture and modes.</li>
-<li><span class="tt">mcu::rtc</span> — Asynchronous Timer2 real-time counter support.</li>
-<li><span class="tt">mcu::pwm</span> — PWM output channels and associated logical pins.</li>
-<li><span class="tt">mcu::adc</span> — ADC channels, input mappings, references and modes.</li>
-<li><span class="tt">mcu::analog_comparator</span> — Analog comparator input and interrupt definitions.</li>
-<li><span class="tt">mcu::usart</span> — USART frame modes, channel numbers and pin multiplexing.</li>
-<li><span class="tt">mcu::spi</span> — SPI interface and pin definitions.</li>
-<li><span class="tt">mcu::twi</span> — Two-wire serial interface characteristics.</li>
-<li><span class="tt">mcu::interrupts</span> — Interrupt vector sources, slot numbers and word addresses.</li>
-<li><span class="tt">mcu::external_interrupts</span> — External interrupt and pin-change mappings.</li>
-<li><span class="tt">mcu::watchdog</span> — Watchdog oscillator and timeout selections.</li>
-<li><span class="tt">mcu::power</span> — Sleep modes and peripheral power gates.</li>
-<li><span class="tt">mcu::reset</span> — Reset origins and status.</li>
-<li><span class="tt">mcu::fuse</span> — Low, high, and extended fuse bit locations.</li>
-<li><span class="tt">mcu::lock_bits</span> — Memory protection and bootloader lock bit positions.</li>
-<li><span class="tt">mcu::bootloader</span> — Boot section sizes and Flash address ranges.</li>
-<li><span class="tt">mcu::programming</span> — In-system programming interface, signatures and page geometry.</li>
-<li><span class="tt">mcu::jtag</span> — JTAG debug and boundary-scan interface.</li>
-<li><span class="tt">mcu::xmem</span> — External memory interface buses and control registers.</li>
-<li><span class="tt">mcu::qtouch</span> — Capacitive touch software support metadata.</li>
-<li><span class="tt">mcu::register_map</span> — Data-space addresses of ATmega2560 peripheral registers.</li>
-<li><span class="tt">mcu::electrical</span> — Operating voltages, frequency grades and absolute limits.</li>
-<li><span class="tt">mcu::errata</span> — Datasheet revision and device silicon errata references.</li>
-</ul>
-<p>The aggregate header has no dedicated C++ namespace; it only includes modules. </p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md78"></a></p>
+<p>All public definitions are under <span class="tt"><a class="el" href="namespaceatmega2560.html" title="ATmega2560 hardware definitions.">atmega2560</a></span>. The consuming application may define <span class="tt">namespace mcu = <a class="el" href="namespaceatmega2560.html" title="ATmega2560 hardware definitions.">atmega2560</a>;</span> for concise access.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Namespace  </th><th class="markdownTableHeadNone">Header  </th><th class="markdownTableHeadNone">Contents  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1device.html" title="Device information.">atmega2560::device</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_device_8h.html" title="Hardware resources, capabilities and device signature.">Device.h</a></span>  </td><td class="markdownTableBodyNone">Hardware resource counts and capabilities  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1architecture.html" title="Architecture definitions.">atmega2560::architecture</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_architecture_8h.html" title="AVR CPU architecture.">Architecture.h</a></span>  </td><td class="markdownTableBodyNone">AVR8 architecture metadata  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1cpu.html" title="Cpu definitions.">atmega2560::cpu</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_c_p_u_8h.html" title="Core register and status flags.">CPU.h</a></span>  </td><td class="markdownTableBodyNone">CPU registers and flags  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1memory.html" title="Memory definitions.">atmega2560::memory</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_memory_8h.html" title="Flash, EEPROM, SRAM, and external-memory geometry.">Memory.h</a></span>  </td><td class="markdownTableBodyNone">Memory geometry  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1eeprom.html" title="Eeprom definitions.">atmega2560::eeprom</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_e_e_p_r_o_m_8h.html" title="EEPROM organization and endurance.">EEPROM.h</a></span>  </td><td class="markdownTableBodyNone">EEPROM geometry  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1register__bits.html" title="Register bits definitions.">atmega2560::register_bits</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_register_bits_8h.html" title="Register bit positions and field masks.">RegisterBits.h</a></span>  </td><td class="markdownTableBodyNone">Register bit fields  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1register__map.html" title="Register map definitions.">atmega2560::register_map</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_register_map_8h.html" title="Data-space addresses of ATmega2560 peripheral registers.">RegisterMap.h</a></span>  </td><td class="markdownTableBodyNone">Register data-space addresses  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1package.html" title="Package definitions.">atmega2560::package</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_package_8h.html" title="Supported package types and selected package.">Package.h</a></span>  </td><td class="markdownTableBodyNone">Physical packages  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1pin.html" title="Logical pin and alternate function identifiers definitions.">atmega2560::pin</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_pin_8h.html" title="Logical GPIO pin and port identifiers.">Pin.h</a></span>  </td><td class="markdownTableBodyNone">Logical pins and ports  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1gpio.html" title="GPIO characteristics.">atmega2560::gpio</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_g_p_i_o_8h.html" title="GPIO port characteristics and register addresses.">GPIO.h</a></span>  </td><td class="markdownTableBodyNone">GPIO capabilities and registers  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1clock.html" title="Clock definitions.">atmega2560::clock</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_clock_8h.html" title="Clock sources, oscillator and CPU prescaler.">Clock.h</a></span>  </td><td class="markdownTableBodyNone">Clock sources and prescalers  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1timer.html" title="Timer definitions.">atmega2560::timer</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_timer_8h.html" title="Timer/counter architecture and modes.">Timer.h</a></span>  </td><td class="markdownTableBodyNone">Timers and modes  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1rtc.html" title="Rtc definitions.">atmega2560::rtc</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_r_t_c_8h.html" title="Asynchronous Timer2 real-time counter support.">RTC.h</a></span>  </td><td class="markdownTableBodyNone">Asynchronous counter  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1pwm.html" title="PWM definitions.">atmega2560::pwm</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_p_w_m_8h.html" title="PWM output channels and associated logical pins.">PWM.h</a></span>  </td><td class="markdownTableBodyNone">PWM channels  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1adc.html" title="ADC definitions.">atmega2560::adc</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_a_d_c_8h.html" title="ADC channels, multiplexer selections, references and modes.">ADC.h</a></span>  </td><td class="markdownTableBodyNone">ADC channels and references  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1analog__comparator.html" title="Analog comparator definitions.">atmega2560::analog_comparator</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_analog_comparator_8h.html" title="Analog comparator input and interrupt definitions.">AnalogComparator.h</a></span>  </td><td class="markdownTableBodyNone">Comparator characteristics  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1usart.html" title="USART definitions.">atmega2560::usart</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_u_s_a_r_t_8h.html" title="USART frame modes, channel numbers and pin multiplexing.">USART.h</a></span>  </td><td class="markdownTableBodyNone">Serial channels  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1spi.html" title="Spi definitions.">atmega2560::spi</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_s_p_i_8h.html" title="SPI interface and pin definitions.">SPI.h</a></span>  </td><td class="markdownTableBodyNone">SPI modes and capabilities  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1twi.html" title="Twi definitions.">atmega2560::twi</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_t_w_i_8h.html" title="Two-wire serial interface characteristics.">TWI.h</a></span>  </td><td class="markdownTableBodyNone">Two-wire interface  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1interrupts.html" title="Interrupts definitions.">atmega2560::interrupts</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_interrupts_8h.html" title="Interrupt vector sources, slot numbers and word addresses.">Interrupts.h</a></span>  </td><td class="markdownTableBodyNone">Interrupt vectors  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1external__interrupts.html" title="External interrupts definitions.">atmega2560::external_interrupts</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_external_interrupts_8h.html" title="External interrupt and pin-change mappings.">ExternalInterrupts.h</a></span>  </td><td class="markdownTableBodyNone">External and pin-change interrupts  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1watchdog.html" title="Watchdog definitions.">atmega2560::watchdog</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_watchdog_8h.html" title="Watchdog oscillator and timeout selections.">Watchdog.h</a></span>  </td><td class="markdownTableBodyNone">Watchdog timer  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1power.html" title="Power definitions.">atmega2560::power</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_power_8h.html" title="Sleep modes and peripheral power gates.">Power.h</a></span>  </td><td class="markdownTableBodyNone">Power and sleep modes  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1reset.html" title="Reset definitions.">atmega2560::reset</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_reset_8h.html" title="Reset origins and status.">Reset.h</a></span>  </td><td class="markdownTableBodyNone">Reset and brownout  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1fuse.html" title="Fuse definitions.">atmega2560::fuse</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_fuse_8h.html" title="Low, high, and extended fuse bit locations.">Fuse.h</a></span>  </td><td class="markdownTableBodyNone">Fuse fields  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1lock__bits.html" title="Lock bits definitions.">atmega2560::lock_bits</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_lock_bits_8h.html" title="Memory protection and bootloader lock bit positions.">LockBits.h</a></span>  </td><td class="markdownTableBodyNone">Protection bits  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1bootloader.html" title="Bootloader definitions.">atmega2560::bootloader</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_bootloader_8h.html" title="Boot section sizes and Flash address ranges.">Bootloader.h</a></span>  </td><td class="markdownTableBodyNone">Boot section geometry  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1programming.html" title="Programming definitions.">atmega2560::programming</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_programming_8h.html" title="In-system programming interface, signatures and page geometry.">Programming.h</a></span>  </td><td class="markdownTableBodyNone">Programming metadata  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1qtouch.html" title="Qtouch definitions.">atmega2560::qtouch</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_q_touch_8h.html" title="Capacitive touch software support metadata.">QTouch.h</a></span>  </td><td class="markdownTableBodyNone">Touch metadata  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1electrical.html" title="Electrical definitions.">atmega2560::electrical</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_electrical_8h.html" title="Operating conditions and absolute maximum ratings.">Electrical.h</a></span>  </td><td class="markdownTableBodyNone">Electrical limits  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1errata.html" title="Errata definitions.">atmega2560::errata</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_errata_8h.html" title="Datasheet revision and device silicon errata references.">Errata.h</a></span>  </td><td class="markdownTableBodyNone">Silicon errata  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1jtag.html" title="Jtag definitions.">atmega2560::jtag</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_j_t_a_g_8h.html" title="JTAG debug and boundary-scan interface.">JTAG.h</a></span>  </td><td class="markdownTableBodyNone">JTAG interface  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="namespaceatmega2560_1_1xmem.html" title="Xmem definitions.">atmega2560::xmem</a></span>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_x_m_e_m_8h.html" title="External memory interface buses and control registers.">XMEM.h</a></span>  </td><td class="markdownTableBodyNone">External memory interface  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md79"></a>
+Nested namespaces</h1>
+<p>Modules may include subnamespaces for individual peripherals, ports, registers, package variants or operating grades. The available names reflect the hardware of the ATmega2560.</p>
+<p><span class="tt">package::selected</span> identifies the package configured by the application. Logical pins remain independent of package terminal numbers. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

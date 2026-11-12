@@ -3,8 +3,8 @@
  * @brief Register bit positions and field masks.
  */
 
-#ifndef ATMEGA2560_DEFINITIONS_REGISTERBITS_H
-#define ATMEGA2560_DEFINITIONS_REGISTERBITS_H
+#ifndef ATMEGA2560_DEFINITIONS_REGISTER_BITS_H
+#define ATMEGA2560_DEFINITIONS_REGISTER_BITS_H
 
 #include <stdint.h>
 #include "Config.h"

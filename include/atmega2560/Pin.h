@@ -157,6 +157,17 @@ namespace atmega2560
             port_j_width = 8, ///< Port J width.
             port_k_width = 8, ///< Port K width.
             port_l_width = 8, ///< Port L width.
+            port_a_mask = 0xFF,
+            port_b_mask = 0xFF,
+            port_c_mask = 0xFF,
+            port_d_mask = 0xFF,
+            port_e_mask = 0xFF,
+            port_f_mask = 0xFF,
+            port_g_mask = 0x3F,
+            port_h_mask = 0xFF,
+            port_j_mask = 0xFF,
+            port_k_mask = 0xFF,
+            port_l_mask = 0xFF
         };
     }
     using pin::Pin;

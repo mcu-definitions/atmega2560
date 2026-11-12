@@ -3,8 +3,8 @@
  * @brief Analog comparator input and interrupt definitions.
  */
 
-#ifndef ATMEGA2560_DEFINITIONS_ANALOGCOMPARATOR_H
-#define ATMEGA2560_DEFINITIONS_ANALOGCOMPARATOR_H
+#ifndef ATMEGA2560_DEFINITIONS_ANALOG_COMPARATOR_H
+#define ATMEGA2560_DEFINITIONS_ANALOG_COMPARATOR_H
 
 #include <stdint.h>
 #include "Config.h"

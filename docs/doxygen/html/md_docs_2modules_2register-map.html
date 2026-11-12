@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
   <div class="headertitle"><div class="title">RegisterMap.h </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md60"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md64"></a></p>
 <p><b>Purpose:</b> Data-space addresses of ATmega2560 peripheral registers.</p>
 <p>Namespace: <span class="tt"><a class="el" href="namespaceatmega2560_1_1register__map.html" title="Register map definitions.">atmega2560::register_map</a></span>.</p>
 <p>These are <b>data-space addresses</b> (for LDS/STS), not the shorter <span class="tt">IN</span>/<span class="tt">OUT</span> instruction operands. The register table extends through <span class="tt">0x136</span>.</p>
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
 <div class="line"><span class="keyword">static_assert</span>(mcu::register_map::TIMSK5 == 0x73, <span class="stringliteral">&quot;ATmega2560 TIMSK5 address&quot;</span>);</div>
 <div class="ttc" id="a_register_map_8h_html"><div class="ttname"><a href="_register_map_8h.html">RegisterMap.h</a></div><div class="ttdoc">Data-space addresses of ATmega2560 peripheral registers.</div></div>
 <div class="ttc" id="anamespaceatmega2560_html"><div class="ttname"><a href="namespaceatmega2560.html">atmega2560</a></div><div class="ttdoc">ATmega2560 hardware definitions.</div><div class="ttdef"><b>Definition</b> ADC.h:15</div></div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md61"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md65"></a>
 Corrected addresses</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -155,12 +155,12 @@ Corrected addresses</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">XMCRB</span>  </td><td class="markdownTableBodyRight"><span class="tt">0x75</span>  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md62"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md66"></a>
 Addressing rules</h1>
 <p>These values use the <b>data-space address</b> from datasheet Section 33. For example, <span class="tt">PORTB</span> is <span class="tt">0x25</span> and <span class="tt">UDR3</span> is <span class="tt">0x136</span>.</p>
 <p>The <span class="tt">IN</span> and <span class="tt">OUT</span> opcodes use I/O addresses; add <span class="tt">0x20</span> to the I/O address when referring to the corresponding data-space address. Extended peripheral registers require load/store instructions. This library does not issue either instruction.</p>
 <p>These are hardware definitions, not runtime register access or initialization.</p>
-<p>Source: <a href="../datasheet/datasheet.pdf">ATmega2560 datasheet (DS40002211A)</a>, Section 33. </p>
+<p>Source: <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf">ATmega2560 datasheet (DS40002211A)</a>, Section 33. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

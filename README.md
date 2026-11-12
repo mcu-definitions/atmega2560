@@ -1,28 +1,12 @@
-# ATmega2560 hardware definitions
+# ATmega2560
 
-A header-only C++11 library containing hardware definitions for the ATmega2560.
+Hardware definitions for the ATmega2560 microcontroller.
 
-The library describes the device, package terminals, logical pins, memory, registers, peripherals, clock sources, interrupts, fuses, electrical limits, and errata.
+Header-only C++11 library describing registers, memory, GPIO, peripherals, package pins, clock sources, interrupts, fuses, electrical characteristics and errata.
 
-It contains definitions only. It does not provide peripheral drivers, register access, initialization, or programmer integration.
+No hardware access, drivers or initialization code is included.
 
-## Include
-
-```cpp
-#include <atmega2560/ATmega2560.h>
-```
-
-For a smaller dependency, include individual modules:
-
-```cpp
-#include <atmega2560/Pin.h>
-#include <atmega2560/GPIO.h>
-#include <atmega2560/RegisterMap.h>
-```
-
-## MCUConfig.h
-
-The consumer selects its physical package and grade and supplies clock/fuse configuration:
+## Usage
 
 ```cpp
 #define MCU_PACKAGE_TQFP100
@@ -34,23 +18,27 @@ The consumer selects its physical package and grade and supplies clock/fuse conf
 namespace mcu = atmega2560;
 ```
 
-Fuse bytes are deliberately not prescribed; verify against actual hardware and bootloader settings.
-
-## Common MCU interface
-
-Keep the same `mcu` alias across device repositories:
+For smaller includes, import the required module directly:
 
 ```cpp
-mcu::gpio::port_count
-mcu::timer::timer_count
-mcu::pwm::channel_count
-mcu::memory::flash_size_bytes
+#include <atmega2560/Pin.h>
+#include <atmega2560/GPIO.h>
+#include <atmega2560/RegisterMap.h>
 ```
+
+The project selects its package, operating grade and clock. Clock and fuse settings must match the physical board.
+
+## Structure
+
+- `include/atmega2560/` — hardware definitions.
+- `docs/` — technical reference and module documentation.
+- `examples/` — usage examples.
+- `Doxyfile` — API documentation configuration.
 
 ## Documentation
 
-Start at [Getting started](docs/getting-started.md), [Namespace map](docs/namespaces.md), [MCU configuration](docs/configuration/mcu-config.md), and [Module reference](docs/index.md).
+[Getting started](docs/getting-started.md) · [Module reference](docs/index.md) · [Technical references](docs/references.md)
 
-## Scope
+## License
 
-The library does not integrate with AVR-GCC, AVRDUDE, an IDE, or a programmer. It provides the definitions that consuming firmware and peripheral libraries can use.
+See [LICENSE](LICENSE).

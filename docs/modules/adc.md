@@ -45,4 +45,4 @@ The datasheet gives expected resolutions of 8 bits at 1x and 10x, and 7 bits at 
 
 These are hardware definitions, not runtime register access or initialization.
 
-Source: [ATmega2560 datasheet (DS40002211A)](../datasheet/datasheet.pdf), Sections 26.7–26.8, Table 26-4.
+Source: [ATmega2560 datasheet (DS40002211A)](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf), Sections 26.7–26.8, Table 26-4.

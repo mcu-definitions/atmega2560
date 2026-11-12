@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_device_8h.htm
 </div><!--header-->
 <div class="contents">
 
-<p>Device identity and peripheral counts.  
+<p>Hardware resources, capabilities and device signature.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_config_8h_source.html">Config.h</a>&quot;</code><br />
@@ -125,39 +125,69 @@ Namespaces</h2></td></tr>
 <tr class="memitem:atmega2560" id="r_atmega2560"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560.html">atmega2560</a></td></tr>
 <tr class="memdesc:namespaceatmega2560"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATmega2560 hardware definitions. <br /></td></tr>
 <tr class="memitem:atmega2560_3A_3Adevice" id="r_atmega2560_3A_3Adevice"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560_1_1device.html">atmega2560::device</a></td></tr>
-<tr class="memdesc:namespaceatmega2560_1_1device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device definitions. <br /></td></tr>
+<tr class="memdesc:namespaceatmega2560_1_1device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device information. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a2143352e6429f5ee361ff363393a482e" id="r_a2143352e6429f5ee361ff363393a482e"><td class="memItemLeft"><a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482e">enum </a>&#160;</td><td class="memItemRight">: uint8_t { <br />
 &#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea2fd8194c5bb65cf04eeed9eccca41d2f">atmega2560::device::programmable_io_line_count</a> = 86
 , <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482eab94716a961be7d9b928c3f5e9215500d">atmega2560::device::gpio_line_count</a> = 86
+, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482eaa9b2f6e9e6d293e0d7f374d60c41746f">atmega2560::device::gpio_line_count_default</a> = 86
 , <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482eacbd7dab19bc6e1b1ab0bf9de18db6f1e">atmega2560::device::timer_count</a> = 6
-, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea24047a514f48071641af90be2f668ed8">atmega2560::device::pwm_channel_count</a> = 16
 , <br />
-&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea577185f62a368eb464e746713427e6b0">atmega2560::device::pwm_distinct_pin_count</a> = 15
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea24047a514f48071641af90be2f668ed8">atmega2560::device::pwm_channel_count</a> = 16
+, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea577185f62a368eb464e746713427e6b0">atmega2560::device::pwm_distinct_pin_count</a> = 15
 , <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482eabd8f1ef52d2a7ae2f30b6b71a83c461a">atmega2560::device::adc_max_external_channel_count</a> = 16
 , <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea82f1f49214b4d5f8a55e626d371a2210">atmega2560::device::adc_resolution_bits</a> = 10
-, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea2865451c6840a38f86dc42d24c480ada">atmega2560::device::usart_count</a> = 4
 , <br />
-&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea935a41410f12eae1e914af4573226280">atmega2560::device::spi_count</a> = 1
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea2865451c6840a38f86dc42d24c480ada">atmega2560::device::usart_count</a> = 4
+, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea935a41410f12eae1e914af4573226280">atmega2560::device::spi_count</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea9bf950048588b97b589b4d6e9952355a">atmega2560::device::spi_capable_peripheral_count</a> = 5
 , <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea6776d05beed6ba465dae9d801dbf988a">atmega2560::device::twi_count</a> = 1
-, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482eada78b6f1aa4c6f014298d6b3cb18d298">atmega2560::device::external_interrupt_count</a> = 8
-, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea2f3584fa96a597d56e2ba33121968f46">atmega2560::device::interrupt_vector_count</a> = 57
 , <br />
-&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea24540494aee22c26f0c458f598dc78f0">atmega2560::device::pin_change_source_count</a> = 24
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482eada78b6f1aa4c6f014298d6b3cb18d298">atmega2560::device::external_interrupt_count</a> = 8
+, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea2f3584fa96a597d56e2ba33121968f46">atmega2560::device::interrupt_vector_count</a> = 57
+, <a class="el" href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482ea24540494aee22c26f0c458f598dc78f0">atmega2560::device::pin_change_source_count</a> = 24
 <br />
  }</td></tr>
-<tr class="memdesc:a2143352e6429f5ee361ff363393a482e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware resources.  <a href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482e">More...</a><br /></td></tr>
-<tr class="memitem:a22325553506f31e9682ccebc273c3e8f" id="r_a22325553506f31e9682ccebc273c3e8f"><td class="memItemLeft"><a class="el" href="namespaceatmega2560_1_1device.html#a22325553506f31e9682ccebc273c3e8f">enum </a>&#160;</td><td class="memItemRight">: uint16_t { <a class="el" href="namespaceatmega2560_1_1device.html#a22325553506f31e9682ccebc273c3e8faef289e7b511c5c2e7a7032a22187948c">atmega2560::device::signature_byte_0</a> = 0x1E
-, <a class="el" href="namespaceatmega2560_1_1device.html#a22325553506f31e9682ccebc273c3e8fa499dc3d7174676a30b690326d278c5c7">atmega2560::device::signature_byte_1</a> = 0x98
-, <a class="el" href="namespaceatmega2560_1_1device.html#a22325553506f31e9682ccebc273c3e8fa1f6bbf7323c4e01782872b0ab5939a79">atmega2560::device::signature_byte_2</a> = 0x01
-, <a class="el" href="namespaceatmega2560_1_1device.html#a22325553506f31e9682ccebc273c3e8faf242f91e27ac86623145630a29295fc1">atmega2560::device::jtag_part_number</a> = 0x9801
+<tr class="memdesc:a2143352e6429f5ee361ff363393a482e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware resource counts.  <a href="namespaceatmega2560_1_1device.html#a2143352e6429f5ee361ff363393a482e">More...</a><br /></td></tr>
+<tr class="memitem:a19a91da6b4008344101c6bf6177366a9" id="r_a19a91da6b4008344101c6bf6177366a9"><td class="memItemLeft"><a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9">enum </a>&#160;</td><td class="memItemRight">: uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9abd3b197c68f9e587b55a526a3a1959ec">atmega2560::device::has_gpio</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a4f8cc607d00c8ceb6bea2a2d1a5d82e8">atmega2560::device::has_adc</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9aba89351f801ea9673d73faa590047b22">atmega2560::device::has_pwm</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a64c74f351e3fa9beb910195291c0fc9b">atmega2560::device::has_timer0</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9afe61f54c2b6f1efd40dc59a8f1a83572">atmega2560::device::has_timer1</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a544e36786c17366e9ab73342d80df468">atmega2560::device::has_timer2</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9ace2bdae7be6501eabb009871260fd59a">atmega2560::device::has_timer3</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a725e2f75c47f7f4d0a67a2279ceb5587">atmega2560::device::has_timer4</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9afe4d770cd555ce8a8736fd9a2717abd3">atmega2560::device::has_timer5</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9ac1890dddf8afc9764d327602feabdf43">atmega2560::device::has_usart</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a4fe75a27b5b4e99214fb17266274a2cd">atmega2560::device::has_spi</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a81c58dc1ed9742d60afb9d507ee4130a">atmega2560::device::has_twi</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a0012ddf4f729fe8e8bc31aaafe3690a6">atmega2560::device::has_analog_comparator</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9af76aa0c25ed3b76fa2d685c8d02ba2a6">atmega2560::device::has_watchdog</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a5c3fbba276493b434a4b1f4f9c214fef">atmega2560::device::has_external_interrupts</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a225840345f6a63d45a0fc6dd80c3a1cf">atmega2560::device::has_pin_change_interrupts</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a9e62484d08b0589377634b8be5a35d6d">atmega2560::device::has_debugwire</a> = 0
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a5cc218da76d3890d621ef1dbdbf96800">atmega2560::device::has_jtag</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9ade1742eb2036ebe8c97bd5a4e465a050">atmega2560::device::has_external_memory_interface</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9a4895e51e69d0c84035761e5afb2240e9">atmega2560::device::has_self_programmable_flash</a> = 1
+<br />
  }</td></tr>
-<tr class="memdesc:a22325553506f31e9682ccebc273c3e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device signatures.  <a href="namespaceatmega2560_1_1device.html#a22325553506f31e9682ccebc273c3e8f">More...</a><br /></td></tr>
+<tr class="memdesc:a19a91da6b4008344101c6bf6177366a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral availability flags.  <a href="namespaceatmega2560_1_1device.html#a19a91da6b4008344101c6bf6177366a9">More...</a><br /></td></tr>
+<tr class="memitem:aabcb42d9122656a79c5d7aca8d458834" id="r_aabcb42d9122656a79c5d7aca8d458834"><td class="memItemLeft"><a class="el" href="namespaceatmega2560_1_1device.html#aabcb42d9122656a79c5d7aca8d458834">enum </a>&#160;</td><td class="memItemRight">: uint16_t { <a class="el" href="namespaceatmega2560_1_1device.html#aabcb42d9122656a79c5d7aca8d458834aef289e7b511c5c2e7a7032a22187948c">atmega2560::device::signature_byte_0</a> = 0x1E
+, <a class="el" href="namespaceatmega2560_1_1device.html#aabcb42d9122656a79c5d7aca8d458834a499dc3d7174676a30b690326d278c5c7">atmega2560::device::signature_byte_1</a> = 0x98
+, <a class="el" href="namespaceatmega2560_1_1device.html#aabcb42d9122656a79c5d7aca8d458834a1f6bbf7323c4e01782872b0ab5939a79">atmega2560::device::signature_byte_2</a> = 0x01
+, <a class="el" href="namespaceatmega2560_1_1device.html#aabcb42d9122656a79c5d7aca8d458834af242f91e27ac86623145630a29295fc1">atmega2560::device::jtag_part_number</a> = 0x9801
+ }</td></tr>
+<tr class="memdesc:aabcb42d9122656a79c5d7aca8d458834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device signature and identification.  <a href="namespaceatmega2560_1_1device.html#aabcb42d9122656a79c5d7aca8d458834">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Device identity and peripheral counts. </p>
+<div class="textblock"><p>Hardware resources, capabilities and device signature. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

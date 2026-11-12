@@ -113,10 +113,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_g_p_i_o_8h.ht
 </div><!--header-->
 <div class="contents">
 
-<p>GPIO port widths, masks and pull-ups.  
+<p>GPIO port characteristics and register addresses.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_config_8h_source.html">Config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_pin_8h_source.html">Pin.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_register_map_8h_source.html">RegisterMap.h</a>&quot;</code><br />
 </div>
 <p><a href="_g_p_i_o_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -125,9 +126,13 @@ Namespaces</h2></td></tr>
 <tr class="memitem:atmega2560" id="r_atmega2560"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560.html">atmega2560</a></td></tr>
 <tr class="memdesc:namespaceatmega2560"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATmega2560 hardware definitions. <br /></td></tr>
 <tr class="memitem:atmega2560_3A_3Agpio" id="r_atmega2560_3A_3Agpio"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560_1_1gpio.html">atmega2560::gpio</a></td></tr>
-<tr class="memdesc:namespaceatmega2560_1_1gpio"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gpio definitions. <br /></td></tr>
+<tr class="memdesc:namespaceatmega2560_1_1gpio"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO characteristics. <br /></td></tr>
 <tr class="memitem:atmega2560_3A_3Agpio_3A_3Aport" id="r_atmega2560_3A_3Agpio_3A_3Aport"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html">atmega2560::gpio::port</a></td></tr>
-<tr class="memdesc:namespaceatmega2560_1_1gpio_1_1port"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> definitions. <br /></td></tr>
+<tr class="memdesc:namespaceatmega2560_1_1gpio_1_1port"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceatmega2560_1_1gpio.html#a005294ce23e387de8da3dd19b978317c">Port</a> widths, valid masks and data-space addresses. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a005294ce23e387de8da3dd19b978317c" id="r_a005294ce23e387de8da3dd19b978317c"><td class="memItemLeft">typedef <a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c">pin::Port</a>&#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560_1_1gpio.html#a005294ce23e387de8da3dd19b978317c">atmega2560::gpio::Port</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -138,10 +143,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceatmega2560_1_1gpio.html#affd11069b309f5a5d95b91fcdd2b4280a99aab987f25c3d1aee699b901790729b">atmega2560::gpio::has_global_pullup_disable</a> = 1
 , <br />
 &#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio.html#affd11069b309f5a5d95b91fcdd2b4280a36ef2aa6632466cd235779fe549189a5">atmega2560::gpio::ports_tristated_during_reset</a> = 1
+, <a class="el" href="namespaceatmega2560_1_1gpio.html#affd11069b309f5a5d95b91fcdd2b4280a296f32bf9c450383eee7126429a69c57">atmega2560::gpio::has_adc_digital_input_disable</a> = 1
 , <a class="el" href="namespaceatmega2560_1_1gpio.html#affd11069b309f5a5d95b91fcdd2b4280a7acec550a776c783dab8aa61d9acf3b4">atmega2560::gpio::has_digital_input_disable_adc0_to_adc15</a> = 1
 <br />
  }</td></tr>
-<tr class="memdesc:affd11069b309f5a5d95b91fcdd2b4280"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO capabilities.  <a href="namespaceatmega2560_1_1gpio.html#affd11069b309f5a5d95b91fcdd2b4280">More...</a><br /></td></tr>
 <tr class="memitem:a83dfa916997e9980be4af5e1232dfd16" id="r_a83dfa916997e9980be4af5e1232dfd16"><td class="memItemLeft"><a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16">enum </a>&#160;</td><td class="memItemRight">: uint8_t { <br />
 &#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16a0a30a37918aa8bd782ed6446295ec5e1">atmega2560::gpio::port::a_width</a> = 8
 , <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16ab7c544f4fb4c3a55189cc6ca86708c5b">atmega2560::gpio::port::b_width</a> = 8
@@ -172,10 +177,53 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16a9afe742ec03b1ac555fb8bfe29a6a468">atmega2560::gpio::port::l_mask</a> = 0xFF
 <br />
  }</td></tr>
-<tr class="memdesc:a83dfa916997e9980be4af5e1232dfd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widths and valid bit masks.  <a href="namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16">More...</a><br /></td></tr>
+<tr class="memitem:a2fd6489c85c3ac658bc612262ac58112" id="r_a2fd6489c85c3ac658bc612262ac58112"><td class="memItemLeft"><a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112">enum </a>&#160;</td><td class="memItemRight">: uint16_t { <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ac15e672a5a00e03dca9a19490bacb886">atmega2560::gpio::port::a_input_register</a> = register_map::PINA
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112aa6e7e8a759abd97257cacb58cb473745">atmega2560::gpio::port::a_direction_register</a> = register_map::DDRA
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ace297eb417052abebee7445160db637a">atmega2560::gpio::port::a_output_register</a> = register_map::PORTA
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a8fc2ff2484dbf565ee3b379b722c2ac7">atmega2560::gpio::port::b_input_register</a> = register_map::PINB
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ae82be00e0f6ad70a48cb90a00e09bf75">atmega2560::gpio::port::b_direction_register</a> = register_map::DDRB
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a9cddb7f2acba9a154b26848c02e20813">atmega2560::gpio::port::b_output_register</a> = register_map::PORTB
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112aa6b07432e42320be064e7369dc6eb627">atmega2560::gpio::port::c_input_register</a> = register_map::PINC
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112aa496a88456157865cea8e835c113190c">atmega2560::gpio::port::c_direction_register</a> = register_map::DDRC
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ad97ee233a8ab7d9014b79c2ccf3d5757">atmega2560::gpio::port::c_output_register</a> = register_map::PORTC
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a723938487709fab48461c8aa202cbc1d">atmega2560::gpio::port::d_input_register</a> = register_map::PIND
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a645c9f672db200f4df9ff0bd9e0b3bc9">atmega2560::gpio::port::d_direction_register</a> = register_map::DDRD
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a711362a0984dec10f17550a211d1570a">atmega2560::gpio::port::d_output_register</a> = register_map::PORTD
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a852c8a742417092aa77a51f092f42a32">atmega2560::gpio::port::e_input_register</a> = register_map::PINE
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a0ecd701fa20206f7538daa53d7dcbdc6">atmega2560::gpio::port::e_direction_register</a> = register_map::DDRE
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112abcd703a31390fa489c7ec5cb3487807c">atmega2560::gpio::port::e_output_register</a> = register_map::PORTE
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a475ad8a498458066dbb69b32be28e025">atmega2560::gpio::port::f_input_register</a> = register_map::PINF
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a9c18ceb35c3d0dbb3fc0c35812458b2a">atmega2560::gpio::port::f_direction_register</a> = register_map::DDRF
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a17aa30385b5e9f645255c9ddc2c1ada6">atmega2560::gpio::port::f_output_register</a> = register_map::PORTF
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a4506fc0c360be3ae785302c17d9ffd50">atmega2560::gpio::port::g_input_register</a> = register_map::PING
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a0fd9261e512af2b38808c5b5f91e6306">atmega2560::gpio::port::g_direction_register</a> = register_map::DDRG
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ade28c775188be6bd045f983b2e87fd14">atmega2560::gpio::port::g_output_register</a> = register_map::PORTG
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112abb2a046a108821761083488160682940">atmega2560::gpio::port::h_input_register</a> = register_map::PINH
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a8691ed5738c7762398f8c0e54e481f84">atmega2560::gpio::port::h_direction_register</a> = register_map::DDRH
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a6ca3e762e9dd809158d0545221b9f3ab">atmega2560::gpio::port::h_output_register</a> = register_map::PORTH
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a6396747db4af5bbbc9c24e7dc574b6f3">atmega2560::gpio::port::j_input_register</a> = register_map::PINJ
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a99e26f57eca58970515f83477be5ed2d">atmega2560::gpio::port::j_direction_register</a> = register_map::DDRJ
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112aa058d5ddb1f581a6e1288eb6e0eded78">atmega2560::gpio::port::j_output_register</a> = register_map::PORTJ
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a163201e2ffb148a52d2b77ba5d8e68d2">atmega2560::gpio::port::k_input_register</a> = register_map::PINK
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ab704ceb8e441482e0c34aa8b109e9126">atmega2560::gpio::port::k_direction_register</a> = register_map::DDRK
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ab875567d0d9357936a4de9af102e5ff8">atmega2560::gpio::port::k_output_register</a> = register_map::PORTK
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a4002bdfc75c631c662cad210ad556738">atmega2560::gpio::port::l_input_register</a> = register_map::PINL
+, <a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a84770daebb389e259a2c3c77def28b69">atmega2560::gpio::port::l_direction_register</a> = register_map::DDRL
+, <br />
+&#160;&#160;<a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a1a9a26e14c7ff284f240c77aa00ce2cd">atmega2560::gpio::port::l_output_register</a> = register_map::PORTL
+<br />
+ }</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GPIO port widths, masks and pull-ups. </p>
+<div class="textblock"><p>GPIO port characteristics and register addresses. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

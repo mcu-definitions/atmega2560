@@ -112,19 +112,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
   <div class="headertitle"><div class="title">ATmega2560.h </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md20"></a></p>
-<p><b>Purpose:</b> Aggregate header for the complete ATmega2560 definition set.</p>
-<p>Namespace: <span class="tt">atmega2560::atmega2560</span>.</p>
-<p>Includes the public modules but does not initialize registers or execute peripheral operations.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md25"></a></p>
+<p>Aggregate include for the ATmega2560 definitions. It includes all public hardware metadata modules, without runtime initialization or register access.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_a_tmega2560_8h.html">atmega2560/ATmega2560.h</a>&gt;</span></div>
-<div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>mcu = <a class="code hl_namespace" href="namespaceatmega2560.html">atmega2560</a>;</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">static_assert</span>(mcu::memory::flash_size_bytes == 262144UL, <span class="stringliteral">&quot;ATmega2560 ATmega2560 definition&quot;</span>);</div>
 <div class="ttc" id="a_a_tmega2560_8h_html"><div class="ttname"><a href="_a_tmega2560_8h.html">ATmega2560.h</a></div><div class="ttdoc">Aggregate include for all ATmega2560 definitions.</div></div>
 <div class="ttc" id="anamespaceatmega2560_html"><div class="ttname"><a href="namespaceatmega2560.html">atmega2560</a></div><div class="ttdoc">ATmega2560 hardware definitions.</div><div class="ttdef"><b>Definition</b> ADC.h:15</div></div>
-</div><!-- fragment --><p>These are hardware definitions, not runtime register access or initialization.</p>
-<p>Source: <a href="../datasheet/datasheet.pdf">ATmega2560 datasheet (DS40002211A)</a>. </p>
+</div><!-- fragment --><p>The header does not define an additional nested namespace. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

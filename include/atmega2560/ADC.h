@@ -13,7 +13,7 @@
 /** @brief ATmega2560 hardware definitions. */
 namespace atmega2560
 {
-    /** @brief Adc definitions. */
+    /** @brief ADC definitions. */
     namespace adc
     {
         /** @brief 16 external ADC channels. */

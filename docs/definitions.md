@@ -1,17 +1,24 @@
 # Definitions model
 
-Each header contains hardware names, enum values, pin masks, register addresses, memory sizes, or device capabilities. It does not implement drivers or register access.
+The ATmega2560 headers describe device-specific hardware facts only. They do not access registers or implement peripheral operations.
 
 ## Interface
 
-Projects choose `namespace mcu = atmega2560;` and access the device definitions through the module namespaces.
+```cpp
+#include <atmega2560/ATmega2560.h>
+namespace mcu = atmega2560;
+```
 
-ATmega2560-specific features include four USART modules, six timers, additional GPIO ports, JTAG and external memory support.
+The library uses namespaces for hardware modules, strongly typed enums for identifiers and modes, and fixed-width integer types for register addresses and limits.
 
-## Address spaces
+## Register addresses
 
-GPIO names encode physical MCU ports, not Arduino pin identifiers. `register_map` uses data-space addresses (`PORTB == 0x25`); AVR `IN`/`OUT` offsets are different for the low I/O space.
+`register_map` stores AVR data-space addresses. Low I/O-space instruction operands use a different offset. Register constants are not pointers and perform no reads or writes.
 
-## Data sources
+## Logical pins and packages
 
-The module pages refer to the official ATmega2560 datasheet. Package-dependent information is organized by the package selected in `MCUConfig.h`.
+Logical pin identifiers are independent of physical package terminals. The package selected by the application controls terminal mapping through `package::selected`.
+
+## Scope
+
+Hardware metadata, including capabilities and limitations, is provided at compile time. Firmware and peripheral libraries remain responsible for validating board wiring and performing hardware access.

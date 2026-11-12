@@ -41,4 +41,4 @@ The `IN` and `OUT` opcodes use I/O addresses; add `0x20` to the I/O address when
 
 These are hardware definitions, not runtime register access or initialization.
 
-Source: [ATmega2560 datasheet (DS40002211A)](../datasheet/datasheet.pdf), Section 33.
+Source: [ATmega2560 datasheet (DS40002211A)](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf), Section 33.

@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespaceatmeg
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> definitions.  
+<p><a class="el" href="namespaceatmega2560_1_1gpio.html#a005294ce23e387de8da3dd19b978317c">Port</a> widths, valid masks and data-space addresses.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -148,11 +148,103 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a83dfa916997e9980be4af5e1232dfd16a9afe742ec03b1ac555fb8bfe29a6a468">l_mask</a> = 0xFF
 <br />
  }</td></tr>
-<tr class="memdesc:a83dfa916997e9980be4af5e1232dfd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widths and valid bit masks.  <a href="#a83dfa916997e9980be4af5e1232dfd16">More...</a><br /></td></tr>
+<tr class="memitem:a2fd6489c85c3ac658bc612262ac58112" id="r_a2fd6489c85c3ac658bc612262ac58112"><td class="memItemLeft"><a class="el" href="#a2fd6489c85c3ac658bc612262ac58112">enum </a>&#160;</td><td class="memItemRight">: uint16_t { <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ac15e672a5a00e03dca9a19490bacb886">a_input_register</a> = register_map::PINA
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112aa6e7e8a759abd97257cacb58cb473745">a_direction_register</a> = register_map::DDRA
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ace297eb417052abebee7445160db637a">a_output_register</a> = register_map::PORTA
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a8fc2ff2484dbf565ee3b379b722c2ac7">b_input_register</a> = register_map::PINB
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ae82be00e0f6ad70a48cb90a00e09bf75">b_direction_register</a> = register_map::DDRB
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a9cddb7f2acba9a154b26848c02e20813">b_output_register</a> = register_map::PORTB
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112aa6b07432e42320be064e7369dc6eb627">c_input_register</a> = register_map::PINC
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112aa496a88456157865cea8e835c113190c">c_direction_register</a> = register_map::DDRC
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ad97ee233a8ab7d9014b79c2ccf3d5757">c_output_register</a> = register_map::PORTC
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a723938487709fab48461c8aa202cbc1d">d_input_register</a> = register_map::PIND
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a645c9f672db200f4df9ff0bd9e0b3bc9">d_direction_register</a> = register_map::DDRD
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a711362a0984dec10f17550a211d1570a">d_output_register</a> = register_map::PORTD
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a852c8a742417092aa77a51f092f42a32">e_input_register</a> = register_map::PINE
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a0ecd701fa20206f7538daa53d7dcbdc6">e_direction_register</a> = register_map::DDRE
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112abcd703a31390fa489c7ec5cb3487807c">e_output_register</a> = register_map::PORTE
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a475ad8a498458066dbb69b32be28e025">f_input_register</a> = register_map::PINF
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a9c18ceb35c3d0dbb3fc0c35812458b2a">f_direction_register</a> = register_map::DDRF
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a17aa30385b5e9f645255c9ddc2c1ada6">f_output_register</a> = register_map::PORTF
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a4506fc0c360be3ae785302c17d9ffd50">g_input_register</a> = register_map::PING
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a0fd9261e512af2b38808c5b5f91e6306">g_direction_register</a> = register_map::DDRG
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ade28c775188be6bd045f983b2e87fd14">g_output_register</a> = register_map::PORTG
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112abb2a046a108821761083488160682940">h_input_register</a> = register_map::PINH
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a8691ed5738c7762398f8c0e54e481f84">h_direction_register</a> = register_map::DDRH
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a6ca3e762e9dd809158d0545221b9f3ab">h_output_register</a> = register_map::PORTH
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a6396747db4af5bbbc9c24e7dc574b6f3">j_input_register</a> = register_map::PINJ
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a99e26f57eca58970515f83477be5ed2d">j_direction_register</a> = register_map::DDRJ
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112aa058d5ddb1f581a6e1288eb6e0eded78">j_output_register</a> = register_map::PORTJ
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a163201e2ffb148a52d2b77ba5d8e68d2">k_input_register</a> = register_map::PINK
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ab704ceb8e441482e0c34aa8b109e9126">k_direction_register</a> = register_map::DDRK
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112ab875567d0d9357936a4de9af102e5ff8">k_output_register</a> = register_map::PORTK
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a4002bdfc75c631c662cad210ad556738">l_input_register</a> = register_map::PINL
+, <a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a84770daebb389e259a2c3c77def28b69">l_direction_register</a> = register_map::DDRL
+, <br />
+&#160;&#160;<a class="el" href="#a2fd6489c85c3ac658bc612262ac58112a1a9a26e14c7ff284f240c77aa00ce2cd">l_output_register</a> = register_map::PORTL
+<br />
+ }</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> definitions. </p>
+<div class="textblock"><p><a class="el" href="namespaceatmega2560_1_1gpio.html#a005294ce23e387de8da3dd19b978317c">Port</a> widths, valid masks and data-space addresses. </p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="a2fd6489c85c3ac658bc612262ac58112" name="a2fd6489c85c3ac658bc612262ac58112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd6489c85c3ac658bc612262ac58112">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum : uint16_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ac15e672a5a00e03dca9a19490bacb886" name="a2fd6489c85c3ac658bc612262ac58112ac15e672a5a00e03dca9a19490bacb886"></a>a_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112aa6e7e8a759abd97257cacb58cb473745" name="a2fd6489c85c3ac658bc612262ac58112aa6e7e8a759abd97257cacb58cb473745"></a>a_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ace297eb417052abebee7445160db637a" name="a2fd6489c85c3ac658bc612262ac58112ace297eb417052abebee7445160db637a"></a>a_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a8fc2ff2484dbf565ee3b379b722c2ac7" name="a2fd6489c85c3ac658bc612262ac58112a8fc2ff2484dbf565ee3b379b722c2ac7"></a>b_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ae82be00e0f6ad70a48cb90a00e09bf75" name="a2fd6489c85c3ac658bc612262ac58112ae82be00e0f6ad70a48cb90a00e09bf75"></a>b_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a9cddb7f2acba9a154b26848c02e20813" name="a2fd6489c85c3ac658bc612262ac58112a9cddb7f2acba9a154b26848c02e20813"></a>b_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112aa6b07432e42320be064e7369dc6eb627" name="a2fd6489c85c3ac658bc612262ac58112aa6b07432e42320be064e7369dc6eb627"></a>c_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112aa496a88456157865cea8e835c113190c" name="a2fd6489c85c3ac658bc612262ac58112aa496a88456157865cea8e835c113190c"></a>c_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ad97ee233a8ab7d9014b79c2ccf3d5757" name="a2fd6489c85c3ac658bc612262ac58112ad97ee233a8ab7d9014b79c2ccf3d5757"></a>c_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a723938487709fab48461c8aa202cbc1d" name="a2fd6489c85c3ac658bc612262ac58112a723938487709fab48461c8aa202cbc1d"></a>d_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a645c9f672db200f4df9ff0bd9e0b3bc9" name="a2fd6489c85c3ac658bc612262ac58112a645c9f672db200f4df9ff0bd9e0b3bc9"></a>d_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a711362a0984dec10f17550a211d1570a" name="a2fd6489c85c3ac658bc612262ac58112a711362a0984dec10f17550a211d1570a"></a>d_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a852c8a742417092aa77a51f092f42a32" name="a2fd6489c85c3ac658bc612262ac58112a852c8a742417092aa77a51f092f42a32"></a>e_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a0ecd701fa20206f7538daa53d7dcbdc6" name="a2fd6489c85c3ac658bc612262ac58112a0ecd701fa20206f7538daa53d7dcbdc6"></a>e_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112abcd703a31390fa489c7ec5cb3487807c" name="a2fd6489c85c3ac658bc612262ac58112abcd703a31390fa489c7ec5cb3487807c"></a>e_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a475ad8a498458066dbb69b32be28e025" name="a2fd6489c85c3ac658bc612262ac58112a475ad8a498458066dbb69b32be28e025"></a>f_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a9c18ceb35c3d0dbb3fc0c35812458b2a" name="a2fd6489c85c3ac658bc612262ac58112a9c18ceb35c3d0dbb3fc0c35812458b2a"></a>f_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a17aa30385b5e9f645255c9ddc2c1ada6" name="a2fd6489c85c3ac658bc612262ac58112a17aa30385b5e9f645255c9ddc2c1ada6"></a>f_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a4506fc0c360be3ae785302c17d9ffd50" name="a2fd6489c85c3ac658bc612262ac58112a4506fc0c360be3ae785302c17d9ffd50"></a>g_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a0fd9261e512af2b38808c5b5f91e6306" name="a2fd6489c85c3ac658bc612262ac58112a0fd9261e512af2b38808c5b5f91e6306"></a>g_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ade28c775188be6bd045f983b2e87fd14" name="a2fd6489c85c3ac658bc612262ac58112ade28c775188be6bd045f983b2e87fd14"></a>g_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112abb2a046a108821761083488160682940" name="a2fd6489c85c3ac658bc612262ac58112abb2a046a108821761083488160682940"></a>h_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a8691ed5738c7762398f8c0e54e481f84" name="a2fd6489c85c3ac658bc612262ac58112a8691ed5738c7762398f8c0e54e481f84"></a>h_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a6ca3e762e9dd809158d0545221b9f3ab" name="a2fd6489c85c3ac658bc612262ac58112a6ca3e762e9dd809158d0545221b9f3ab"></a>h_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a6396747db4af5bbbc9c24e7dc574b6f3" name="a2fd6489c85c3ac658bc612262ac58112a6396747db4af5bbbc9c24e7dc574b6f3"></a>j_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a99e26f57eca58970515f83477be5ed2d" name="a2fd6489c85c3ac658bc612262ac58112a99e26f57eca58970515f83477be5ed2d"></a>j_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112aa058d5ddb1f581a6e1288eb6e0eded78" name="a2fd6489c85c3ac658bc612262ac58112aa058d5ddb1f581a6e1288eb6e0eded78"></a>j_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a163201e2ffb148a52d2b77ba5d8e68d2" name="a2fd6489c85c3ac658bc612262ac58112a163201e2ffb148a52d2b77ba5d8e68d2"></a>k_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ab704ceb8e441482e0c34aa8b109e9126" name="a2fd6489c85c3ac658bc612262ac58112ab704ceb8e441482e0c34aa8b109e9126"></a>k_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112ab875567d0d9357936a4de9af102e5ff8" name="a2fd6489c85c3ac658bc612262ac58112ab875567d0d9357936a4de9af102e5ff8"></a>k_output_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a4002bdfc75c631c662cad210ad556738" name="a2fd6489c85c3ac658bc612262ac58112a4002bdfc75c631c662cad210ad556738"></a>l_input_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a84770daebb389e259a2c3c77def28b69" name="a2fd6489c85c3ac658bc612262ac58112a84770daebb389e259a2c3c77def28b69"></a>l_direction_register&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2fd6489c85c3ac658bc612262ac58112a1a9a26e14c7ff284f240c77aa00ce2cd" name="a2fd6489c85c3ac658bc612262ac58112a1a9a26e14c7ff284f240c77aa00ce2cd"></a>l_output_register&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a83dfa916997e9980be4af5e1232dfd16" name="a83dfa916997e9980be4af5e1232dfd16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83dfa916997e9980be4af5e1232dfd16">&#9670;&#160;</a></span>anonymous enum</h2>
 
@@ -164,53 +256,29 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Widths and valid bit masks. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a0a30a37918aa8bd782ed6446295ec5e1" name="a83dfa916997e9980be4af5e1232dfd16a0a30a37918aa8bd782ed6446295ec5e1"></a>a_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> A width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16ab7c544f4fb4c3a55189cc6ca86708c5b" name="a83dfa916997e9980be4af5e1232dfd16ab7c544f4fb4c3a55189cc6ca86708c5b"></a>b_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> B width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a2e988d5d3ce4a3935919ff4c6913a849" name="a83dfa916997e9980be4af5e1232dfd16a2e988d5d3ce4a3935919ff4c6913a849"></a>c_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> C width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a9a50fc7e2acec24dad824e8a743904dc" name="a83dfa916997e9980be4af5e1232dfd16a9a50fc7e2acec24dad824e8a743904dc"></a>d_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> D width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a9a32903f6e54b471cfeced67fb12a210" name="a83dfa916997e9980be4af5e1232dfd16a9a32903f6e54b471cfeced67fb12a210"></a>e_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> E width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a3b5cc7d7b55c1dfc39872fe5b0936784" name="a83dfa916997e9980be4af5e1232dfd16a3b5cc7d7b55c1dfc39872fe5b0936784"></a>f_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> F width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16acfa9882b5017f9921a3c80f2b55f597b" name="a83dfa916997e9980be4af5e1232dfd16acfa9882b5017f9921a3c80f2b55f597b"></a>g_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> G width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a453bdd6601303df1d295949fe1edf7e6" name="a83dfa916997e9980be4af5e1232dfd16a453bdd6601303df1d295949fe1edf7e6"></a>h_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> H width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16af8c994adeafde62cf9611bb61b337865" name="a83dfa916997e9980be4af5e1232dfd16af8c994adeafde62cf9611bb61b337865"></a>j_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> J width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a85244e57b6aae5b921ad93df8b27640b" name="a83dfa916997e9980be4af5e1232dfd16a85244e57b6aae5b921ad93df8b27640b"></a>k_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> K width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a53624d6ad74533cedf2c4f29c530f0c8" name="a83dfa916997e9980be4af5e1232dfd16a53624d6ad74533cedf2c4f29c530f0c8"></a>l_width&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> L width. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a799d287d69d796686a3fcbe9fcc3498f" name="a83dfa916997e9980be4af5e1232dfd16a799d287d69d796686a3fcbe9fcc3498f"></a>a_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> A bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a6d26936debbf4a7ed82084b9ff2dcceb" name="a83dfa916997e9980be4af5e1232dfd16a6d26936debbf4a7ed82084b9ff2dcceb"></a>b_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> B bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a048c079e2f2858af101ffa344cba1186" name="a83dfa916997e9980be4af5e1232dfd16a048c079e2f2858af101ffa344cba1186"></a>c_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> C bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a587c6c9cc2108d896d730c25aa69ade6" name="a83dfa916997e9980be4af5e1232dfd16a587c6c9cc2108d896d730c25aa69ade6"></a>d_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> D bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a54b5608eec321e4f9471b068542b365b" name="a83dfa916997e9980be4af5e1232dfd16a54b5608eec321e4f9471b068542b365b"></a>e_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> E bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16aaa9f71cb0bb7299a64b3c1911706bde8" name="a83dfa916997e9980be4af5e1232dfd16aaa9f71cb0bb7299a64b3c1911706bde8"></a>f_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> F bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a7cbcb494520d2201e4dbb4a3ad8dc610" name="a83dfa916997e9980be4af5e1232dfd16a7cbcb494520d2201e4dbb4a3ad8dc610"></a>g_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> G bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a51354368dc962c336750153f4aa6688f" name="a83dfa916997e9980be4af5e1232dfd16a51354368dc962c336750153f4aa6688f"></a>h_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> H bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16ae8eae9e3ed2a235082e5e0bbc41b654b" name="a83dfa916997e9980be4af5e1232dfd16ae8eae9e3ed2a235082e5e0bbc41b654b"></a>j_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> J bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16af7953c7663f2de2d8fa2a6ab9eaefddb" name="a83dfa916997e9980be4af5e1232dfd16af7953c7663f2de2d8fa2a6ab9eaefddb"></a>k_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> K bonded GPIO mask. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a9afe742ec03b1ac555fb8bfe29a6a468" name="a83dfa916997e9980be4af5e1232dfd16a9afe742ec03b1ac555fb8bfe29a6a468"></a>l_mask&#160;</td><td class="fielddoc"><p><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> L bonded GPIO mask. </p>
-</td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a0a30a37918aa8bd782ed6446295ec5e1" name="a83dfa916997e9980be4af5e1232dfd16a0a30a37918aa8bd782ed6446295ec5e1"></a>a_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16ab7c544f4fb4c3a55189cc6ca86708c5b" name="a83dfa916997e9980be4af5e1232dfd16ab7c544f4fb4c3a55189cc6ca86708c5b"></a>b_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a2e988d5d3ce4a3935919ff4c6913a849" name="a83dfa916997e9980be4af5e1232dfd16a2e988d5d3ce4a3935919ff4c6913a849"></a>c_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a9a50fc7e2acec24dad824e8a743904dc" name="a83dfa916997e9980be4af5e1232dfd16a9a50fc7e2acec24dad824e8a743904dc"></a>d_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a9a32903f6e54b471cfeced67fb12a210" name="a83dfa916997e9980be4af5e1232dfd16a9a32903f6e54b471cfeced67fb12a210"></a>e_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a3b5cc7d7b55c1dfc39872fe5b0936784" name="a83dfa916997e9980be4af5e1232dfd16a3b5cc7d7b55c1dfc39872fe5b0936784"></a>f_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16acfa9882b5017f9921a3c80f2b55f597b" name="a83dfa916997e9980be4af5e1232dfd16acfa9882b5017f9921a3c80f2b55f597b"></a>g_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a453bdd6601303df1d295949fe1edf7e6" name="a83dfa916997e9980be4af5e1232dfd16a453bdd6601303df1d295949fe1edf7e6"></a>h_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16af8c994adeafde62cf9611bb61b337865" name="a83dfa916997e9980be4af5e1232dfd16af8c994adeafde62cf9611bb61b337865"></a>j_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a85244e57b6aae5b921ad93df8b27640b" name="a83dfa916997e9980be4af5e1232dfd16a85244e57b6aae5b921ad93df8b27640b"></a>k_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a53624d6ad74533cedf2c4f29c530f0c8" name="a83dfa916997e9980be4af5e1232dfd16a53624d6ad74533cedf2c4f29c530f0c8"></a>l_width&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a799d287d69d796686a3fcbe9fcc3498f" name="a83dfa916997e9980be4af5e1232dfd16a799d287d69d796686a3fcbe9fcc3498f"></a>a_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a6d26936debbf4a7ed82084b9ff2dcceb" name="a83dfa916997e9980be4af5e1232dfd16a6d26936debbf4a7ed82084b9ff2dcceb"></a>b_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a048c079e2f2858af101ffa344cba1186" name="a83dfa916997e9980be4af5e1232dfd16a048c079e2f2858af101ffa344cba1186"></a>c_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a587c6c9cc2108d896d730c25aa69ade6" name="a83dfa916997e9980be4af5e1232dfd16a587c6c9cc2108d896d730c25aa69ade6"></a>d_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a54b5608eec321e4f9471b068542b365b" name="a83dfa916997e9980be4af5e1232dfd16a54b5608eec321e4f9471b068542b365b"></a>e_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16aaa9f71cb0bb7299a64b3c1911706bde8" name="a83dfa916997e9980be4af5e1232dfd16aaa9f71cb0bb7299a64b3c1911706bde8"></a>f_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a7cbcb494520d2201e4dbb4a3ad8dc610" name="a83dfa916997e9980be4af5e1232dfd16a7cbcb494520d2201e4dbb4a3ad8dc610"></a>g_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a51354368dc962c336750153f4aa6688f" name="a83dfa916997e9980be4af5e1232dfd16a51354368dc962c336750153f4aa6688f"></a>h_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16ae8eae9e3ed2a235082e5e0bbc41b654b" name="a83dfa916997e9980be4af5e1232dfd16ae8eae9e3ed2a235082e5e0bbc41b654b"></a>j_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16af7953c7663f2de2d8fa2a6ab9eaefddb" name="a83dfa916997e9980be4af5e1232dfd16af7953c7663f2de2d8fa2a6ab9eaefddb"></a>k_mask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a83dfa916997e9980be4af5e1232dfd16a9afe742ec03b1ac555fb8bfe29a6a468" name="a83dfa916997e9980be4af5e1232dfd16a9afe742ec03b1ac555fb8bfe29a6a468"></a>l_mask&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

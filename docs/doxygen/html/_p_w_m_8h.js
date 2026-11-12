@@ -18,6 +18,11 @@ var _p_w_m_8h =
       [ "atmega2560::pwm::Channel::OC5B", "namespaceatmega2560_1_1pwm.html#a01c08a8936a7feaaaa2e9e9bf75df052a38e38dc72b6cecd15383797b6f987a25", null ],
       [ "atmega2560::pwm::Channel::OC5C", "namespaceatmega2560_1_1pwm.html#a01c08a8936a7feaaaa2e9e9bf75df052a0d55d6bcac1a1f2670d240bda3aea246", null ]
     ] ],
+    [ "atmega2560::pwm::Mode", "namespaceatmega2560_1_1pwm.html#ac89d53516a3dba276c8b4408407316c1", [
+      [ "atmega2560::pwm::Mode::Fast", "namespaceatmega2560_1_1pwm.html#ac89d53516a3dba276c8b4408407316c1ae16b5b7f26f54214445cbe38d72c2828", null ],
+      [ "atmega2560::pwm::Mode::PhaseCorrect", "namespaceatmega2560_1_1pwm.html#ac89d53516a3dba276c8b4408407316c1aa687c3cd952cfd12d789a4633f830f33", null ],
+      [ "atmega2560::pwm::Mode::PhaseAndFrequencyCorrect", "namespaceatmega2560_1_1pwm.html#ac89d53516a3dba276c8b4408407316c1a514693314323881841a608ccf641fee1", null ]
+    ] ],
     [ "atmega2560::pwm::OutputPin", "namespaceatmega2560_1_1pwm.html#ab13325055b14a6d66de08831d11dde52", [
       [ "atmega2560::pwm::OutputPin::OC0A", "namespaceatmega2560_1_1pwm.html#ab13325055b14a6d66de08831d11dde52a5950fb114c065ecad1783a11c4599967", null ],
       [ "atmega2560::pwm::OutputPin::OC0B", "namespaceatmega2560_1_1pwm.html#ab13325055b14a6d66de08831d11dde52a6e612d495c386926cf53042957ff5903", null ],

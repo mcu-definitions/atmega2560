@@ -239,6 +239,21 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a0fdd1ced1dab51b3cc7b8d81637be6b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">16-bit waveform generator encodings.  <a href="#a0fdd1ced1dab51b3cc7b8d81637be6b8">More...</a><br /></td></tr>
 <tr class="memitem:a962c10bf2e593de6cb07b728ade98d91" id="r_a962c10bf2e593de6cb07b728ade98d91"><td class="memItemLeft"><a class="el" href="#a962c10bf2e593de6cb07b728ade98d91">enum </a>&#160;</td><td class="memItemRight">: uint8_t { <br />
 &#160;&#160;<a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a400382d0c1a15228567c0c8fccbb590f">timer_count</a> = 6
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91ab68459637d4771f0fbd6106a853870e9">timer0_counter_bits</a> = 8
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91ac933895380401c1f19d236517c0a6863">timer1_counter_bits</a> = 16
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a0caec093b6dcf7ac39f126c6597c44b9">timer2_counter_bits</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="#a962c10bf2e593de6cb07b728ade98d91aef4e63ab27d0f8820cf486a28ce9a377">timer3_counter_bits</a> = 16
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91aa70fd6c456ad813889d7e59efbb28b2b">timer4_counter_bits</a> = 16
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91aadac6c17499148a4b985dd1f84647103">timer5_counter_bits</a> = 16
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a203af57f5506b211a796f46b35d72d2d">timer0_compare_channel_count</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a3bf8db2b7fcc8cdc838d67bea9ecd2c6">timer1_compare_channel_count</a> = 3
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a0fa4c0da6237b3cc80383cf5d87b05c2">timer2_compare_channel_count</a> = 2
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a582abd95891b72f9fa7803d9bb90b9b8">timer3_compare_channel_count</a> = 3
+, <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a83ca6d8b2ec769f6e8778bd58b925456">timer4_compare_channel_count</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a93763cbffe0890cbd56ba69c3caed370">timer5_compare_channel_count</a> = 3
 , <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91afe23849c9fd040bfe2f2e54ac5bc94c0">timer8_count</a> = 2
 , <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a8a938bf5e838b20b6fbe5a6fbb83b245">timer16_count</a> = 4
 , <a class="el" href="#a962c10bf2e593de6cb07b728ade98d91a17f96795aa661645f4d85ee90d6003c3">output_compare_8bit_channel_count</a> = 4
@@ -356,7 +371,19 @@ Enumerations</h2></td></tr>
 
 <p>Timer resources. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a400382d0c1a15228567c0c8fccbb590f" name="a962c10bf2e593de6cb07b728ade98d91a400382d0c1a15228567c0c8fccbb590f"></a>timer_count&#160;</td><td class="fielddoc"><p>timer count. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a400382d0c1a15228567c0c8fccbb590f" name="a962c10bf2e593de6cb07b728ade98d91a400382d0c1a15228567c0c8fccbb590f"></a>timer_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91ab68459637d4771f0fbd6106a853870e9" name="a962c10bf2e593de6cb07b728ade98d91ab68459637d4771f0fbd6106a853870e9"></a>timer0_counter_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91ac933895380401c1f19d236517c0a6863" name="a962c10bf2e593de6cb07b728ade98d91ac933895380401c1f19d236517c0a6863"></a>timer1_counter_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a0caec093b6dcf7ac39f126c6597c44b9" name="a962c10bf2e593de6cb07b728ade98d91a0caec093b6dcf7ac39f126c6597c44b9"></a>timer2_counter_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91aef4e63ab27d0f8820cf486a28ce9a377" name="a962c10bf2e593de6cb07b728ade98d91aef4e63ab27d0f8820cf486a28ce9a377"></a>timer3_counter_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91aa70fd6c456ad813889d7e59efbb28b2b" name="a962c10bf2e593de6cb07b728ade98d91aa70fd6c456ad813889d7e59efbb28b2b"></a>timer4_counter_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91aadac6c17499148a4b985dd1f84647103" name="a962c10bf2e593de6cb07b728ade98d91aadac6c17499148a4b985dd1f84647103"></a>timer5_counter_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a203af57f5506b211a796f46b35d72d2d" name="a962c10bf2e593de6cb07b728ade98d91a203af57f5506b211a796f46b35d72d2d"></a>timer0_compare_channel_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a3bf8db2b7fcc8cdc838d67bea9ecd2c6" name="a962c10bf2e593de6cb07b728ade98d91a3bf8db2b7fcc8cdc838d67bea9ecd2c6"></a>timer1_compare_channel_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a0fa4c0da6237b3cc80383cf5d87b05c2" name="a962c10bf2e593de6cb07b728ade98d91a0fa4c0da6237b3cc80383cf5d87b05c2"></a>timer2_compare_channel_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a582abd95891b72f9fa7803d9bb90b9b8" name="a962c10bf2e593de6cb07b728ade98d91a582abd95891b72f9fa7803d9bb90b9b8"></a>timer3_compare_channel_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a83ca6d8b2ec769f6e8778bd58b925456" name="a962c10bf2e593de6cb07b728ade98d91a83ca6d8b2ec769f6e8778bd58b925456"></a>timer4_compare_channel_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91a93763cbffe0890cbd56ba69c3caed370" name="a962c10bf2e593de6cb07b728ade98d91a93763cbffe0890cbd56ba69c3caed370"></a>timer5_compare_channel_count&#160;</td><td class="fielddoc"><p>timer count. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a962c10bf2e593de6cb07b728ade98d91afe23849c9fd040bfe2f2e54ac5bc94c0" name="a962c10bf2e593de6cb07b728ade98d91afe23849c9fd040bfe2f2e54ac5bc94c0"></a>timer8_count&#160;</td><td class="fielddoc"><p>timer8 count. </p>
 </td></tr>

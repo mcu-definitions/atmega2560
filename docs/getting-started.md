@@ -1,26 +1,34 @@
 # Getting started
 
-The definitions are C++11 header-only and expose hardware metadata.
-
 ## Include
+
+Add `include/` to the compiler's include path and import the aggregate header or the specific modules you need.
 
 ```cpp
 #define MCU_PACKAGE_TQFP100
 #define MCU_GRADE_INDUSTRIAL_85C
-#include <atmega2560/ATmega2560.h>
-namespace mcu = atmega2560;
+#define MCU_CLOCK_HZ 16000000UL
 
-static_assert(mcu::gpio::port_count == 11, "GPIO ports");
-static_assert(mcu::usart::module_count == 4, "USART count");
-static_assert(mcu::register_map::PORTB == 0x25, "Data-space address");
+#include <atmega2560/ATmega2560.h>
+
+namespace mcu = atmega2560;
 ```
 
-Add `include/` to the compiler search path. Include only the headers you need, or include the aggregate header.
+The definitions use C++11 and do not require a runtime library.
 
-## Addresses and pins
+## Read hardware metadata
 
-`register_map` values are data-space addresses. They are not compiler intrinsics or volatile register objects. `pin::Pin` values encode logical MCU port and bit, not Arduino board pin numbers.
+```cpp
+constexpr auto ports = mcu::gpio::port_count;
+constexpr auto flash = mcu::memory::flash_size_bytes;
+constexpr auto pin = mcu::pin::Pin::PB5;
+constexpr auto port_b_input = mcu::gpio::port::b_input_register;
+```
 
-## Package
+`pin::Pin` identifies a logical MCU signal, not a board connector or package terminal. Register addresses are data-space addresses, not references to volatile registers.
 
-Choose `MCU_PACKAGE_TQFP100` or `MCU_PACKAGE_CBGA100` before any definition header. `package::selected` exposes package metadata.
+## Configuration
+
+Define the target package, operating grade and board clock before including the device headers. Fuse values are board-specific and should only be supplied when known.
+
+See [MCUConfig.h](configuration/mcu-config.md), and the [Module reference](index.md).

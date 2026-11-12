@@ -111,7 +111,19 @@ namespace atmega2560
         /** @brief Timer resources. */
         enum : uint8_t
         {
-            timer_count = 6,                         ///< timer count.
+            timer_count = 6,
+            timer0_counter_bits = 8,
+            timer1_counter_bits = 16,
+            timer2_counter_bits = 8,
+            timer3_counter_bits = 16,
+            timer4_counter_bits = 16,
+            timer5_counter_bits = 16,
+            timer0_compare_channel_count = 2,
+            timer1_compare_channel_count = 3,
+            timer2_compare_channel_count = 2,
+            timer3_compare_channel_count = 3,
+            timer4_compare_channel_count = 3,
+            timer5_compare_channel_count = 3,        ///< timer count.
             timer8_count = 2,                        ///< timer8 count.
             timer16_count = 4,                       ///< timer16 count.
             output_compare_8bit_channel_count = 4,   ///< output compare 8bit channel count.

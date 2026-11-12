@@ -1,63 +1,63 @@
-# atmega2560
+# ATmega2560 reference
 
 Hardware definitions for the ATmega2560.
 
-## Start here
+## Getting started
 
-- [Getting started](getting-started.md)
+- [Usage](getting-started.md)
 - [Namespaces](namespaces.md)
-- [Macros](macros.md)
 - [Definitions model](definitions.md)
+- [Preprocessor macros](macros.md)
 
-## MCU configuration
+## Configuration
 
-- [Configuration file](configuration/mcu-config.md)
-- [Clock configuration](configuration/clock.md)
-- [Fuse bytes](configuration/fuses.md)
+- [MCUConfig.h](configuration/mcu-config.md)
+- [Clock](configuration/clock.md)
+- [Fuses](configuration/fuses.md)
 
-## Module reference
+## Modules
 
-| Header | Documentation |
-|---|---|
-| `ATmega2560.h` | [ATmega2560](modules/aggregate-header.md) |
-| `Config.h` | [Config](modules/config.md) |
-| `Device.h` | [Device](modules/device.md) |
-| `Architecture.h` | [Architecture](modules/architecture.md) |
-| `CPU.h` | [CPU](modules/cpu.md) |
-| `Memory.h` | [Memory](modules/memory.md) |
-| `EEPROM.h` | [EEPROM](modules/eeprom.md) |
-| `RegisterBits.h` | [RegisterBits](modules/register-bits.md) |
-| `Package.h` | [Package](modules/package.md) |
-| `PackagePins.h` | [PackagePins](modules/package-pins.md) |
-| `Pin.h` | [Pin](modules/pin.md) |
-| `PinFunctions.h` | [PinFunctions](modules/pin-functions.md) |
-| `GPIO.h` | [GPIO](modules/gpio.md) |
-| `Clock.h` | [Clock](modules/clock.md) |
-| `Timer.h` | [Timer](modules/timer.md) |
-| `RTC.h` | [RTC](modules/rtc.md) |
-| `PWM.h` | [PWM](modules/pwm.md) |
-| `ADC.h` | [ADC](modules/adc.md) |
-| `AnalogComparator.h` | [AnalogComparator](modules/analog-comparator.md) |
-| `USART.h` | [USART](modules/usart.md) |
-| `SPI.h` | [SPI](modules/spi.md) |
-| `TWI.h` | [TWI](modules/twi.md) |
-| `Interrupts.h` | [Interrupts](modules/interrupts.md) |
-| `ExternalInterrupts.h` | [ExternalInterrupts](modules/external-interrupts.md) |
-| `Watchdog.h` | [Watchdog](modules/watchdog.md) |
-| `Power.h` | [Power](modules/power.md) |
-| `Reset.h` | [Reset](modules/reset.md) |
-| `Fuse.h` | [Fuse](modules/fuse.md) |
-| `LockBits.h` | [LockBits](modules/lock-bits.md) |
-| `Bootloader.h` | [Bootloader](modules/bootloader.md) |
-| `Programming.h` | [Programming](modules/programming.md) |
-| `JTAG.h` | [JTAG](modules/jtag.md) |
-| `XMEM.h` | [XMEM](modules/xmem.md) |
-| `QTouch.h` | [QTouch](modules/qtouch.md) |
-| `RegisterMap.h` | [RegisterMap](modules/register-map.md) |
-| `Electrical.h` | [Electrical](modules/electrical.md) |
-| `Errata.h` | [Errata](modules/errata.md) |
+| Header | Reference | Description |
+|---|---|---|
+| `ATmega2560.h` | [All modules](modules/aggregate-header.md) | Aggregate include |
+| `Config.h` | [Configuration](modules/config.md) | Device identification, package and grade selection |
+| `Device.h` | [Device](modules/device.md) | Hardware resources and capabilities |
+| `Architecture.h` | [Architecture](modules/architecture.md) | AVR8 architecture characteristics |
+| `CPU.h` | [CPU](modules/cpu.md) | Core registers and status flags |
+| `Memory.h` | [Memory](modules/memory.md) | Flash, SRAM and EEPROM geometry |
+| `EEPROM.h` | [EEPROM](modules/eeprom.md) | EEPROM organization |
+| `RegisterBits.h` | [Register bits](modules/register-bits.md) | Bit positions and register masks |
+| `Package.h` | [Package](modules/package.md) | Physical package characteristics |
+| `PackagePins.h` | [Package pins](modules/package-pins.md) | Terminal assignments and package mapping |
+| `Pin.h` | [Pins](modules/pin.md) | Logical port and pin identifiers |
+| `PinFunctions.h` | [Pin functions](modules/pin-functions.md) | Peripheral signal mapping |
+| `GPIO.h` | [GPIO](modules/gpio.md) | Port widths, masks and capabilities |
+| `Clock.h` | [Clock](modules/clock.md) | Oscillator and clock characteristics |
+| `Timer.h` | [Timers](modules/timer.md) | Timer/counter modes and characteristics |
+| `RTC.h` | [RTC](modules/rtc.md) | Asynchronous timer characteristics |
+| `PWM.h` | [PWM](modules/pwm.md) | Output-compare channels and modes |
+| `ADC.h` | [ADC](modules/adc.md) | Conversion channels and references |
+| `AnalogComparator.h` | [Analog comparator](modules/analog-comparator.md) | Analog comparator characteristics |
+| `USART.h` | [USART](modules/usart.md) | Serial controller characteristics |
+| `SPI.h` | [SPI](modules/spi.md) | SPI hardware definitions |
+| `TWI.h` | [TWI](modules/twi.md) | Two-wire interface characteristics |
+| `Interrupts.h` | [Interrupts](modules/interrupts.md) | Interrupt sources and vectors |
+| `ExternalInterrupts.h` | [External interrupts](modules/external-interrupts.md) | External and pin-change sources |
+| `Watchdog.h` | [Watchdog](modules/watchdog.md) | Watchdog timing and control definitions |
+| `Power.h` | [Power](modules/power.md) | Sleep and power-control definitions |
+| `Reset.h` | [Reset](modules/reset.md) | Reset sources and brownout detection |
+| `Fuse.h` | [Fuses](modules/fuse.md) | Fuse bit encodings |
+| `LockBits.h` | [Lock bits](modules/lock-bits.md) | Lock-bit encodings |
+| `Bootloader.h` | [Bootloader](modules/bootloader.md) | Boot-section layout |
+| `Programming.h` | [Programming](modules/programming.md) | Programming interface characteristics |
+| `JTAG.h` | [JTAG](modules/jtag.md) | JTAG and boundary-scan definitions |
+| `XMEM.h` | [External memory](modules/xmem.md) | External-memory interface characteristics |
+| `QTouch.h` | [QTouch](modules/qtouch.md) | Capacitive touch support metadata |
+| `RegisterMap.h` | [Register map](modules/register-map.md) | Data-space register addresses |
+| `Electrical.h` | [Electrical](modules/electrical.md) | Operating limits and electrical characteristics |
+| `Errata.h` | [Errata](modules/errata.md) | Silicon revisions and errata information |
 
-## More
+## Reference
 
-- [No runtime implementation](no-runtime-code.md)
+- [No runtime behavior](no-runtime-code.md)
 - [Technical references](references.md)

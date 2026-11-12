@@ -113,13 +113,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespaceatmeg
 </div><!--header-->
 <div class="contents">
 
-<p>Gpio definitions.  
+<p>GPIO characteristics.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:port" id="r_port"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceatmega2560_1_1gpio_1_1port.html">port</a></td></tr>
-<tr class="memdesc:namespaceatmega2560_1_1gpio_1_1port"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c" title="GPIO ports.">Port</a> definitions. <br /></td></tr>
+<tr class="memdesc:namespaceatmega2560_1_1gpio_1_1port"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#a005294ce23e387de8da3dd19b978317c">Port</a> widths, valid masks and data-space addresses. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a005294ce23e387de8da3dd19b978317c" id="r_a005294ce23e387de8da3dd19b978317c"><td class="memItemLeft">typedef <a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c">pin::Port</a>&#160;</td><td class="memItemRight"><a class="el" href="#a005294ce23e387de8da3dd19b978317c">Port</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -130,14 +134,29 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#affd11069b309f5a5d95b91fcdd2b4280a99aab987f25c3d1aee699b901790729b">has_global_pullup_disable</a> = 1
 , <br />
 &#160;&#160;<a class="el" href="#affd11069b309f5a5d95b91fcdd2b4280a36ef2aa6632466cd235779fe549189a5">ports_tristated_during_reset</a> = 1
+, <a class="el" href="#affd11069b309f5a5d95b91fcdd2b4280a296f32bf9c450383eee7126429a69c57">has_adc_digital_input_disable</a> = 1
 , <a class="el" href="#affd11069b309f5a5d95b91fcdd2b4280a7acec550a776c783dab8aa61d9acf3b4">has_digital_input_disable_adc0_to_adc15</a> = 1
 <br />
  }</td></tr>
-<tr class="memdesc:affd11069b309f5a5d95b91fcdd2b4280"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO capabilities.  <a href="#affd11069b309f5a5d95b91fcdd2b4280">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Gpio definitions. </p>
-</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<div class="textblock"><p>GPIO characteristics. </p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="a005294ce23e387de8da3dd19b978317c" name="a005294ce23e387de8da3dd19b978317c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005294ce23e387de8da3dd19b978317c">&#9670;&#160;</a></span>Port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c">pin::Port</a> <a class="el" href="namespaceatmega2560_1_1pin.html#af51569b204af087f656cc37650d67a4c">atmega2560::gpio::Port</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
 <a id="affd11069b309f5a5d95b91fcdd2b4280" name="affd11069b309f5a5d95b91fcdd2b4280"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affd11069b309f5a5d95b91fcdd2b4280">&#9670;&#160;</a></span>anonymous enum</h2>
 
@@ -149,21 +168,14 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>GPIO capabilities. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a5a0c2e146798495d64c00953b7c3af73" name="affd11069b309f5a5d95b91fcdd2b4280a5a0c2e146798495d64c00953b7c3af73"></a>port_count&#160;</td><td class="fielddoc"><p>port count. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a06d109c235969ffa4f50492f6a2cfeec" name="affd11069b309f5a5d95b91fcdd2b4280a06d109c235969ffa4f50492f6a2cfeec"></a>has_internal_pullups&#160;</td><td class="fielddoc"><p>has internal pullups. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280aaa6eb27bc8e51885caff4db8729c62f3" name="affd11069b309f5a5d95b91fcdd2b4280aaa6eb27bc8e51885caff4db8729c62f3"></a>pullups_selectable_per_pin&#160;</td><td class="fielddoc"><p>pullups selectable per pin. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a99aab987f25c3d1aee699b901790729b" name="affd11069b309f5a5d95b91fcdd2b4280a99aab987f25c3d1aee699b901790729b"></a>has_global_pullup_disable&#160;</td><td class="fielddoc"><p>has global pullup disable. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a36ef2aa6632466cd235779fe549189a5" name="affd11069b309f5a5d95b91fcdd2b4280a36ef2aa6632466cd235779fe549189a5"></a>ports_tristated_during_reset&#160;</td><td class="fielddoc"><p>ports tristated during reset. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a7acec550a776c783dab8aa61d9acf3b4" name="affd11069b309f5a5d95b91fcdd2b4280a7acec550a776c783dab8aa61d9acf3b4"></a>has_digital_input_disable_adc0_to_adc15&#160;</td><td class="fielddoc"><p>has digital input disable adc0 to adc15. </p>
-</td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a5a0c2e146798495d64c00953b7c3af73" name="affd11069b309f5a5d95b91fcdd2b4280a5a0c2e146798495d64c00953b7c3af73"></a>port_count&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a06d109c235969ffa4f50492f6a2cfeec" name="affd11069b309f5a5d95b91fcdd2b4280a06d109c235969ffa4f50492f6a2cfeec"></a>has_internal_pullups&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280aaa6eb27bc8e51885caff4db8729c62f3" name="affd11069b309f5a5d95b91fcdd2b4280aaa6eb27bc8e51885caff4db8729c62f3"></a>pullups_selectable_per_pin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a99aab987f25c3d1aee699b901790729b" name="affd11069b309f5a5d95b91fcdd2b4280a99aab987f25c3d1aee699b901790729b"></a>has_global_pullup_disable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a36ef2aa6632466cd235779fe549189a5" name="affd11069b309f5a5d95b91fcdd2b4280a36ef2aa6632466cd235779fe549189a5"></a>ports_tristated_during_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a296f32bf9c450383eee7126429a69c57" name="affd11069b309f5a5d95b91fcdd2b4280a296f32bf9c450383eee7126429a69c57"></a>has_adc_digital_input_disable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd11069b309f5a5d95b91fcdd2b4280a7acec550a776c783dab8aa61d9acf3b4" name="affd11069b309f5a5d95b91fcdd2b4280a7acec550a776c783dab8aa61d9acf3b4"></a>has_digital_input_disable_adc0_to_adc15&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

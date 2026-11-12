@@ -112,20 +112,61 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2macro
   <div class="headertitle"><div class="title">Macros </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md16"></a></p>
-<p>The <span class="tt">MCU_*</span> macros identify the target device and allow conditional inclusion and configuration. Metadata constants and enums are otherwise preferred.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md17"></a></p>
+<p>The device definitions expose <span class="tt"><a class="el" href="_config_8h.html#a3a6ec3e35a3f65a8b153f696b7cb2053">MCU_ATMEGA2560</a></span> and preprocessor feature flags for available peripherals.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+Available hardware flags</h1>
 <ul>
-<li><span class="tt"><a class="el" href="_config_8h.html#a3a6ec3e35a3f65a8b153f696b7cb2053">MCU_ATMEGA2560</a></span> — target identifier.</li>
-<li><span class="tt">MCU_HAS_*</span> — peripheral feature flags; see <span class="tt"><a class="el" href="_config_8h.html" title="Device, package and operating-grade selection.">Config.h</a></span> for the complete list.</li>
-<li><span class="tt">MCU_PACKAGE_TQFP100</span>, <span class="tt">MCU_PACKAGE_CBGA100</span> — select one.</li>
-<li><span class="tt">MCU_GRADE_INDUSTRIAL_85C</span>, <span class="tt">MCU_GRADE_LOW_VOLTAGE</span> — select one.</li>
-<li><span class="tt">MCU_REQUIRE_PACKAGE</span>, <span class="tt">MCU_REQUIRE_GRADE</span> — require explicit package and grade selection at compile time.</li>
-<li><span class="tt">MCU_CLOCK_HZ</span> — project-defined clock value, not a device header default.</li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a2e6fae307af66ac41051a38f9d46c82f">MCU_HAS_GPIO</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a5c3bf065299f541954b877e3064a0b84">MCU_HAS_ADC</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#ae695c2484aa54882242cad89f3a9c3a3">MCU_HAS_PWM</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#af51659601453b1f59aca586dcfdb6c42">MCU_HAS_TIMER0</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a747fea90643cb5d776c735cc43c1b27a">MCU_HAS_TIMER1</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a254d63b2aa24ad3afe2fb35ff62cf0b8">MCU_HAS_TIMER2</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a039ee1d6cdf4cdac8277b357330c1694">MCU_HAS_TIMER3</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a9e6938ad190e4fafca71e2d197681037">MCU_HAS_TIMER4</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a535ef6727dd1efb36f098bf716ad616b">MCU_HAS_TIMER5</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a5d8929b9f1999c000ca9c1f99c5b58dd">MCU_HAS_USART</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a9c3de20e985ac9f0027f28d67ee70898">MCU_HAS_SPI</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a0a389252221c90efded778f47dc45d20">MCU_HAS_TWI</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a4bc6060d903d30e00e2f6df867bb9397">MCU_HAS_ANALOG_COMPARATOR</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a7d206279fc7d361ed8570ca17ae5cf1e">MCU_HAS_WATCHDOG</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#aa7814c0e18b7f1addb4ec10b6b52e445">MCU_HAS_EXTERNAL_INTERRUPTS</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a31262719fad10c7e07315814ac377999">MCU_HAS_PIN_CHANGE_INTERRUPTS</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a9bc5fe4f50e4c016755d9872d7df49ce">MCU_HAS_JTAG</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a665e126066177a1024db39f09e41a634">MCU_HAS_EXTERNAL_MEMORY_INTERFACE</a></span></li>
+<li><span class="tt"><a class="el" href="_config_8h.html#a588d21ef0745310af76466a66309bde8">MCU_HAS_SELF_PROGRAMMABLE_FLASH</a></span></li>
 </ul>
-<p>A package or grade is never silently selected by this library. </p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+Package selection</h1>
+<ul>
+<li><span class="tt">MCU_PACKAGE_TQFP100</span></li>
+<li><span class="tt">MCU_PACKAGE_CBGA100</span></li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+Operating grade</h1>
+<ul>
+<li><span class="tt">MCU_GRADE_INDUSTRIAL_85C</span></li>
+<li><span class="tt">MCU_GRADE_LOW_VOLTAGE</span></li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+Configuration checks</h1>
+<ul>
+<li><span class="tt">MCU_REQUIRE_PACKAGE</span> — require explicit package selection.</li>
+<li><span class="tt">MCU_REQUIRE_GRADE</span> — require explicit grade selection.</li>
+</ul>
+<p><span class="tt">MCU_CLOCK_HZ</span> and optional fuse settings belong to the consuming firmware. They do not configure the device by themselves.</p>
+<p>For C++ code, prefer the typed namespace constants such as <span class="tt">mcu::gpio::port_count</span> and <span class="tt">mcu::device::has_gpio</span>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

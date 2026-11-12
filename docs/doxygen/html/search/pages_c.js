@@ -1,5 +1,7 @@
 var searchData=
 [
   ['namespaces_0',['Namespaces',['../md_docs_2namespaces.html',1,'']]],
-  ['no_20runtime_20implementation_1',['No runtime implementation',['../md_docs_2no-runtime-code.html',1,'']]]
+  ['namespaces_1',['Nested namespaces',['../md_docs_2namespaces.html#autotoc_md79',1,'']]],
+  ['nested_20namespaces_2',['Nested namespaces',['../md_docs_2namespaces.html#autotoc_md79',1,'']]],
+  ['no_20runtime_20behavior_3',['No runtime behavior',['../md_docs_2no-runtime-code.html',1,'']]]
 ];

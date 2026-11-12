@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
   <div class="headertitle"><div class="title">Fuse.h </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md36"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md41"></a></p>
 <p><b>Purpose:</b> Low, high, and extended fuse bit locations.</p>
 <p>Namespace: <span class="tt"><a class="el" href="namespaceatmega2560_1_1fuse.html" title="Fuse definitions.">atmega2560::fuse</a></span>.</p>
 <p>Fuse locations are bit positions. Fuse bytes are active-low: programmed bits are zero. Do not infer fuse bytes for a board from these constants alone.</p>
@@ -123,12 +123,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
 <div class="line"><span class="keyword">static_assert</span>(mcu::fuse::high::JTAGEN == 6, <span class="stringliteral">&quot;ATmega2560 Fuse definition&quot;</span>);</div>
 <div class="ttc" id="a_fuse_8h_html"><div class="ttname"><a href="_fuse_8h.html">Fuse.h</a></div><div class="ttdoc">Low, high, and extended fuse bit locations.</div></div>
 <div class="ttc" id="anamespaceatmega2560_html"><div class="ttname"><a href="namespaceatmega2560.html">atmega2560</a></div><div class="ttdoc">ATmega2560 hardware definitions.</div><div class="ttdef"><b>Definition</b> ADC.h:15</div></div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
 Safety</h1>
 <p>Fuse bit constants are <b>positions</b>; they are not complete fuse byte presets. Fuse byte values depend on the selected bootloader size, JTAG state, system clock, and brown-out configuration. Choose them for the target board before programming.</p>
 <p>Microchip identifies bit value <span class="tt">0</span> as <b>programmed</b> and <span class="tt">1</span> as <b>unprogrammed</b>.</p>
 <p>These are hardware definitions, not runtime register access or initialization.</p>
-<p>Source: <a href="../datasheet/datasheet.pdf">ATmega2560 datasheet (DS40002211A)</a>. </p>
+<p>Source: <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf">ATmega2560 datasheet (DS40002211A)</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -113,17 +113,23 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2defin
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md3"></a></p>
-<p>Each header contains hardware names, enum values, pin masks, register addresses, memory sizes, or device capabilities. It does not implement drivers or register access.</p>
+<p>The ATmega2560 headers describe device-specific hardware facts only. They do not access registers or implement peripheral operations.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 Interface</h1>
-<p>Projects choose <span class="tt">namespace mcu = <a class="el" href="namespaceatmega2560.html" title="ATmega2560 hardware definitions.">atmega2560</a>;</span> and access the device definitions through the module namespaces.</p>
-<p>ATmega2560-specific features include four USART modules, six timers, additional GPIO ports, JTAG and external memory support.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_a_tmega2560_8h.html">atmega2560/ATmega2560.h</a>&gt;</span></div>
+<div class="line"><span class="keyword">namespace </span>mcu = <a class="code hl_namespace" href="namespaceatmega2560.html">atmega2560</a>;</div>
+<div class="ttc" id="a_a_tmega2560_8h_html"><div class="ttname"><a href="_a_tmega2560_8h.html">ATmega2560.h</a></div><div class="ttdoc">Aggregate include for all ATmega2560 definitions.</div></div>
+<div class="ttc" id="anamespaceatmega2560_html"><div class="ttname"><a href="namespaceatmega2560.html">atmega2560</a></div><div class="ttdoc">ATmega2560 hardware definitions.</div><div class="ttdef"><b>Definition</b> ADC.h:15</div></div>
+</div><!-- fragment --><p>The library uses namespaces for hardware modules, strongly typed enums for identifiers and modes, and fixed-width integer types for register addresses and limits.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
-Address spaces</h1>
-<p>GPIO names encode physical MCU ports, not Arduino pin identifiers. <span class="tt">register_map</span> uses data-space addresses (<span class="tt">PORTB == 0x25</span>); AVR <span class="tt">IN</span>/<span class="tt">OUT</span> offsets are different for the low I/O space.</p>
+Register addresses</h1>
+<p><span class="tt">register_map</span> stores AVR data-space addresses. Low I/O-space instruction operands use a different offset. Register constants are not pointers and perform no reads or writes.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
-Data sources</h1>
-<p>The module pages refer to the official ATmega2560 datasheet. Package-dependent information is organized by the package selected in <span class="tt">MCUConfig.h</span>. </p>
+Logical pins and packages</h1>
+<p>Logical pin identifiers are independent of physical package terminals. The package selected by the application controls terminal mapping through <span class="tt">package::selected</span>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+Scope</h1>
+<p>Hardware metadata, including capabilities and limitations, is provided at compile time. Firmware and peripheral libraries remain responsible for validating board wiring and performing hardware access. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

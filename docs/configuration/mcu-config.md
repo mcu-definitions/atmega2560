@@ -1,15 +1,29 @@
 # MCUConfig.h
 
-The configuration file belongs to the consuming project, not the definitions library. It must be included before any device headers.
+The consuming firmware owns this configuration. Define target-specific values before including the device headers.
 
 ```cpp
+#ifndef MCU_CONFIG_H
+#define MCU_CONFIG_H
+
 #define MCU_PACKAGE_TQFP100
 #define MCU_GRADE_INDUSTRIAL_85C
 #define MCU_CLOCK_HZ 16000000UL
+
 #include <atmega2560/ATmega2560.h>
+
 namespace mcu = atmega2560;
+
+#endif
 ```
 
-Only one package and one grade may be selected. Set `MCU_REQUIRE_PACKAGE` or `MCU_REQUIRE_GRADE` to require explicit selection.
+| Setting | Purpose |
+|---|---|
+| `MCU_PACKAGE_TQFP100` | Physical package selection |
+| `MCU_GRADE_INDUSTRIAL_85C` | Device operating grade |
+| `MCU_CLOCK_HZ` | Expected CPU clock, supplied by the board |
+| `namespace mcu = atmega2560` | Short alias for this device's definitions |
 
-For bootloaded Arduino Mega hardware, fuse values depend on the board's bootloader and oscillator.
+Fuse values may be provided as board-specific macros, but the library does not program them.
+
+The operating frequency depends on the board oscillator and fuse settings. A package and grade selection do not program fuses or configure clocks.

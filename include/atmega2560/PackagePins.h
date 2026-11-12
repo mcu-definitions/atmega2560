@@ -3,8 +3,8 @@
  * @brief Physical terminal and ball mappings for 100-terminal packages.
  */
 
-#ifndef ATMEGA2560_DEFINITIONS_PACKAGEPINS_H
-#define ATMEGA2560_DEFINITIONS_PACKAGEPINS_H
+#ifndef ATMEGA2560_DEFINITIONS_PACKAGE_PINS_H
+#define ATMEGA2560_DEFINITIONS_PACKAGE_PINS_H
 
 #include <stdint.h>
 #include "Config.h"

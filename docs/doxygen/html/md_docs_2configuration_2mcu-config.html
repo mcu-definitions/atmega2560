@@ -113,16 +113,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2confi
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md2"></a></p>
-<p>The configuration file belongs to the consuming project, not the definitions library. It must be included before any device headers.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#define MCU_PACKAGE_TQFP100</span></div>
+<p>The consuming firmware owns this configuration. Define target-specific values before including the device headers.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#ifndef MCU_CONFIG_H</span></div>
+<div class="line"><span class="preprocessor">#define MCU_CONFIG_H</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define MCU_PACKAGE_TQFP100</span></div>
 <div class="line"><span class="preprocessor">#define MCU_GRADE_INDUSTRIAL_85C</span></div>
 <div class="line"><span class="preprocessor">#define MCU_CLOCK_HZ 16000000UL</span></div>
+<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_a_tmega2560_8h.html">atmega2560/ATmega2560.h</a>&gt;</span></div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>mcu = <a class="code hl_namespace" href="namespaceatmega2560.html">atmega2560</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_a_tmega2560_8h_html"><div class="ttname"><a href="_a_tmega2560_8h.html">ATmega2560.h</a></div><div class="ttdoc">Aggregate include for all ATmega2560 definitions.</div></div>
 <div class="ttc" id="anamespaceatmega2560_html"><div class="ttname"><a href="namespaceatmega2560.html">atmega2560</a></div><div class="ttdoc">ATmega2560 hardware definitions.</div><div class="ttdef"><b>Definition</b> ADC.h:15</div></div>
-</div><!-- fragment --><p>Only one package and one grade may be selected. Set <span class="tt">MCU_REQUIRE_PACKAGE</span> or <span class="tt">MCU_REQUIRE_GRADE</span> to require explicit selection.</p>
-<p>For bootloaded Arduino Mega hardware, fuse values depend on the board's bootloader and oscillator. </p>
+</div><!-- fragment --><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Setting  </th><th class="markdownTableHeadNone">Purpose  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">MCU_PACKAGE_TQFP100</span>  </td><td class="markdownTableBodyNone">Physical package selection  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">MCU_GRADE_INDUSTRIAL_85C</span>  </td><td class="markdownTableBodyNone">Device operating grade  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">MCU_CLOCK_HZ</span>  </td><td class="markdownTableBodyNone">Expected CPU clock, supplied by the board  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">namespace mcu = <a class="el" href="namespaceatmega2560.html" title="ATmega2560 hardware definitions.">atmega2560</a></span>  </td><td class="markdownTableBodyNone">Short alias for this device's definitions  </td></tr>
+</table>
+<p>Fuse values may be provided as board-specific macros, but the library does not program them.</p>
+<p>The operating frequency depends on the board oscillator and fuse settings. A package and grade selection do not program fuses or configure clocks. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

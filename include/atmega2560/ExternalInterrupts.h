@@ -3,8 +3,8 @@
  * @brief External interrupt and pin-change mappings.
  */
 
-#ifndef ATMEGA2560_DEFINITIONS_EXTERNALINTERRUPTS_H
-#define ATMEGA2560_DEFINITIONS_EXTERNALINTERRUPTS_H
+#ifndef ATMEGA2560_DEFINITIONS_EXTERNAL_INTERRUPTS_H
+#define ATMEGA2560_DEFINITIONS_EXTERNAL_INTERRUPTS_H
 
 #include <stdint.h>
 #include "Config.h"

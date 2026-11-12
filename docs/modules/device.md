@@ -1,19 +1,16 @@
 # Device.h
 
-**Purpose:** Device identity and peripheral counts.
+**Purpose:** Device resources, peripheral capabilities and signature bytes.
 
-Namespace: `atmega2560::device`.
-
-The ATmega2560 chip signature is `1E 98 01`.
+Namespace: `atmega2560::device`
 
 ```cpp
 #include <atmega2560/Device.h>
-
 namespace mcu = atmega2560;
 
-static_assert(mcu::device::usart_count == 4, "ATmega2560 Device definition");
+constexpr auto lines = mcu::device::programmable_io_line_count;
+constexpr auto timers = mcu::device::timer_count;
+constexpr auto has_adc = mcu::device::has_adc;
 ```
 
-These are hardware definitions, not runtime register access or initialization.
-
-Source: [ATmega2560 datasheet (DS40002211A)](../datasheet/datasheet.pdf).
+Count values describe the device's hardware resources; `has_*` flags expose supported features. Board configuration can reserve signals for reset, clocks or other functions.

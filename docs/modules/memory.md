@@ -29,4 +29,4 @@ SRAM and Flash use different address spaces. Never use a Flash word address as a
 
 These are hardware definitions, not runtime register access or initialization.
 
-Source: [ATmega2560 datasheet (DS40002211A)](../datasheet/datasheet.pdf).
+Source: [ATmega2560 datasheet (DS40002211A)](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf).

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ATmega2560: No runtime implementation</title>
+<title>ATmega2560: No runtime behavior</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -109,11 +109,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2no-ru
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">No runtime implementation </div></div>
+  <div class="headertitle"><div class="title">No runtime behavior </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md75"></a></p>
-<p>The library contains hardware definitions only. It does not access <span class="tt">volatile</span> registers, configure GPIO, initialize a USART, modify fuses or program Flash. Drivers belong to separate peripheral repositories. </p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md80"></a></p>
+<p>The ATmega2560 headers define compile-time hardware metadata only. They do not access volatile registers, install interrupt handlers, initialize peripherals or program fuses. Driver and board initialization code belongs to consuming firmware. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

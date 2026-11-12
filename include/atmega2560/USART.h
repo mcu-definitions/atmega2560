@@ -13,7 +13,7 @@
 /** @brief ATmega2560 hardware definitions. */
 namespace atmega2560
 {
-    /** @brief Usart definitions. */
+    /** @brief USART definitions. */
     namespace usart
     {
         /** @brief Hardware USART instances. */

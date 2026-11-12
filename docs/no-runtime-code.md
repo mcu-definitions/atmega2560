@@ -1,3 +1,3 @@
-# No runtime implementation
+# No runtime behavior
 
-The library contains hardware definitions only. It does not access `volatile` registers, configure GPIO, initialize a USART, modify fuses or program Flash. Drivers belong to separate peripheral repositories.
+The ATmega2560 headers define compile-time hardware metadata only. They do not access volatile registers, install interrupt handlers, initialize peripherals or program fuses. Driver and board initialization code belongs to consuming firmware.

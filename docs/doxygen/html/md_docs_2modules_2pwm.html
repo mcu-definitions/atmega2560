@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
   <div class="headertitle"><div class="title">PWM.h </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md55"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md59"></a></p>
 <p><b>Purpose:</b> PWM output channels and associated logical pins.</p>
-<p>Namespace: <span class="tt"><a class="el" href="namespaceatmega2560_1_1pwm.html" title="Pwm definitions.">atmega2560::pwm</a></span>.</p>
+<p>Namespace: <span class="tt"><a class="el" href="namespaceatmega2560_1_1pwm.html" title="PWM definitions.">atmega2560::pwm</a></span>.</p>
 <p>There are 16 compare outputs mapped to 15 distinct GPIO pins: PB7 is multiplexed between OC0A and OC1C. Do not infer that 16 separate pins can generate PWM simultaneously.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_p_w_m_8h.html">atmega2560/PWM.h</a>&gt;</span></div>
 <div class="line"> </div>
@@ -123,12 +123,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md_docs_2modul
 <div class="line"><span class="keyword">static_assert</span>(mcu::pwm::channel_count == 16, <span class="stringliteral">&quot;ATmega2560 PWM definition&quot;</span>);</div>
 <div class="ttc" id="a_p_w_m_8h_html"><div class="ttname"><a href="_p_w_m_8h.html">PWM.h</a></div><div class="ttdoc">PWM output channels and associated logical pins.</div></div>
 <div class="ttc" id="anamespaceatmega2560_html"><div class="ttname"><a href="namespaceatmega2560.html">atmega2560</a></div><div class="ttdoc">ATmega2560 hardware definitions.</div><div class="ttdef"><b>Definition</b> ADC.h:15</div></div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md56"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md60"></a>
 Compare outputs</h1>
 <p>Timer0/2 expose A and B. Timers1/3/4/5 expose A, B and C, for 16 compare channels in total. Because OC0A and OC1C both use PB7, there are only 15 distinct PWM-capable GPIO pins.</p>
 <p>Channel counts are hardware outputs rather than guarantees of simultaneous independent pin use.</p>
 <p>These are hardware definitions, not runtime register access or initialization.</p>
-<p>Source: <a href="../datasheet/datasheet.pdf">ATmega2560 datasheet (DS40002211A)</a>. </p>
+<p>Source: <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/ATmega640-1280-1281-2560-2561-Datasheet-DS40002211A.pdf">ATmega2560 datasheet (DS40002211A)</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

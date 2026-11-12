@@ -11,6 +11,9 @@ var searchData=
   ['k7_8',['K7',['../namespaceatmega2560_1_1package_1_1cbga100.html#ac7819f35391c6f3eae526277af1d0ccea796b28d18486c32e04618487d92239ad',1,'atmega2560::package::cbga100']]],
   ['k8_9',['K8',['../namespaceatmega2560_1_1package_1_1cbga100.html#ac7819f35391c6f3eae526277af1d0ccead75b6300c7d76ad2333a502569d8968e',1,'atmega2560::package::cbga100']]],
   ['k9_10',['K9',['../namespaceatmega2560_1_1package_1_1cbga100.html#ac7819f35391c6f3eae526277af1d0ccea4db176c5d4fb53b90d14f7324a68c8c8',1,'atmega2560::package::cbga100']]],
-  ['k_5fmask_11',['k_mask',['../namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16af7953c7663f2de2d8fa2a6ab9eaefddb',1,'atmega2560::gpio::port']]],
-  ['k_5fwidth_12',['k_width',['../namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16a85244e57b6aae5b921ad93df8b27640b',1,'atmega2560::gpio::port']]]
+  ['k_5fdirection_5fregister_11',['k_direction_register',['../namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ab704ceb8e441482e0c34aa8b109e9126',1,'atmega2560::gpio::port']]],
+  ['k_5finput_5fregister_12',['k_input_register',['../namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112a163201e2ffb148a52d2b77ba5d8e68d2',1,'atmega2560::gpio::port']]],
+  ['k_5fmask_13',['k_mask',['../namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16af7953c7663f2de2d8fa2a6ab9eaefddb',1,'atmega2560::gpio::port']]],
+  ['k_5foutput_5fregister_14',['k_output_register',['../namespaceatmega2560_1_1gpio_1_1port.html#a2fd6489c85c3ac658bc612262ac58112ab875567d0d9357936a4de9af102e5ff8',1,'atmega2560::gpio::port']]],
+  ['k_5fwidth_15',['k_width',['../namespaceatmega2560_1_1gpio_1_1port.html#a83dfa916997e9980be4af5e1232dfd16a85244e57b6aae5b921ad93df8b27640b',1,'atmega2560::gpio::port']]]
 ];

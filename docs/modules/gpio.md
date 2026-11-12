@@ -1,26 +1,19 @@
 # GPIO.h
 
-**Purpose:** GPIO port widths, masks and pull-ups.
+**Purpose:** GPIO port widths, valid bit masks, register addresses and hardware capabilities.
 
-Namespace: `atmega2560::gpio`.
+Namespace: `atmega2560::gpio`
+
+The device exposes 11 GPIO ports (A, B, C, D, E, F, H, J, K, L, G).
 
 ```cpp
 #include <atmega2560/GPIO.h>
-
 namespace mcu = atmega2560;
 
-static_assert(mcu::gpio::port_count == 11, "ATmega2560 GPIO definition");
+constexpr auto ports = mcu::gpio::port_count;
+constexpr auto width = mcu::gpio::port::b_width;
+constexpr auto mask = mcu::gpio::port::b_mask;
+constexpr auto direction = mcu::gpio::port::b_direction_register;
 ```
 
-## Port map
-
-| Port | GPIO bits |
-|---|---|
-| A, B, C, D, E, F, H, J, K, L | 0–7 |
-| G | 0–5 |
-
-The chip has 86 general-purpose I/O lines. GPIO pins shared with external memory, JTAG, the crystal, or serial peripherals may be unavailable to general GPIO in a given board configuration.
-
-These are hardware definitions, not runtime register access or initialization.
-
-Source: [ATmega2560 datasheet (DS40002211A)](../datasheet/datasheet.pdf).
+Register metadata uses AVR data-space addresses. This header does not configure GPIO or access registers.

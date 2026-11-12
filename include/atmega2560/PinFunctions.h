@@ -3,8 +3,8 @@
  * @brief Pin capabilities and alternate function identifiers.
  */
 
-#ifndef ATMEGA2560_DEFINITIONS_PINFUNCTIONS_H
-#define ATMEGA2560_DEFINITIONS_PINFUNCTIONS_H
+#ifndef ATMEGA2560_DEFINITIONS_PIN_FUNCTIONS_H
+#define ATMEGA2560_DEFINITIONS_PIN_FUNCTIONS_H
 
 #include <stdint.h>
 #include "Config.h"
